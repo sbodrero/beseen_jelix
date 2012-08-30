@@ -296,11 +296,25 @@ iframe {
     border-bottom: 25px solid #161616;
 }
 
-#themesList {
-
+#themesList ul {
+	margin-left: 0px;
+	position: relative;
+	left: -25px;
 }
 
-.news h2 {
+#themesList li a {
+	display: block;
+	background: url('../Images/categoryGrey.png') no-repeat;
+	height: 30px;
+	padding-left: 35px;
+	line-height: 22px;
+	text-decoration: none;
+}
+#themesList li a:hover {
+	background: url('../Images/categoryBlue.png') no-repeat;	
+}
+
+#newsPage h2 {
 	margin-top: 10px;
 }
 
