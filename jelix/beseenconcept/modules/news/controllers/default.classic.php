@@ -29,5 +29,9 @@ class defaultCtrl extends jController {
 
         return $rep;
     }
+
+    function showNewsByTheme() {
+
+    }
 }
 
