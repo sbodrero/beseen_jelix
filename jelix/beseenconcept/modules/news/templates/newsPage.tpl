@@ -12,5 +12,7 @@
 			</div>
 		{/foreach}
 	{/if}
+	<div id="newsMenuContainer" class="dotBkg">
+		{zone 'news~themes'}
+	</div>
 </div>
-{zone 'news~themes'}

@@ -22,7 +22,7 @@
 }
 }
 
-label, input, textarea, .mceEditor {
+label, input, textarea {
 	display: inline-block;
 	vertical-align: top;
 	width: 100px;

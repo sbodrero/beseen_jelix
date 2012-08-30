@@ -36,6 +36,24 @@ hr {
 	color: #472626 !important;	
 }
 
+blockquote {
+	margin-top: 35px;
+	margin-bottom: 60px;
+	padding: 0px 122px 0px 122px;
+	background-image: url('../Images/quote.png');
+	background-repeat: no-repeat;
+	background-position: 65px 10px;
+
+}
+
+blockquote p {
+	text-align: justify;
+	font-family: Georgia, sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-style: italic;
+}
+
 .indent { text-indent: -9999px;}
 
 .textShadow {
@@ -118,24 +136,6 @@ hr {
 	text-align: center;
 	padding-top: 52px;
 	height: 250px;
-}
-
-blockquote {
-	margin-top: 35px;
-	margin-bottom: 60px;
-	padding: 0px 122px 0px 122px;
-	background-image: url('../Images/quote.png');
-	background-repeat: no-repeat;
-	background-position: 65px 10px;
-
-}
-
-blockquote p {
-	text-align: justify;
-	font-family: Georgia, sans-serif;
-	font-size: 16px;
-	line-height: 30px;
-	font-style: italic;
 }
 
 #leftSide {
@@ -273,16 +273,31 @@ iframe {
 }
 
 #newsPage {
+	position: relative;
 	margin-top: 45px;	
 }
 
 .news {
 	position: relative;
 	height: 200px;
-	width: 550px;
+	width: 510px;
 	padding: 30px 20px 20px 20px;
 	margin-bottom: 30px;
 	border-bottom: 25px solid #161616;
+}
+
+#newsMenuContainer {
+	position: absolute;
+	top: 15px;
+	left: 600px;
+    width: 300px;
+    height: 505px;
+    padding: 30px 20px 20px 20px;
+    border-bottom: 25px solid #161616;
+}
+
+#themesList {
+
 }
 
 .news h2 {

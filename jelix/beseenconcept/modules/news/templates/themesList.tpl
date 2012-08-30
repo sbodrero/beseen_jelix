@@ -1,4 +1,5 @@
 <div id="themesList">
+	<img class="newsRibbon" src="{$j_themepath}Images/newsRibbon.png" alt="Ruban news">
 	<h2>Themes</h2>
 	<hr>
 	<ul>
