@@ -299,16 +299,17 @@ iframe {
 #themesList ul {
 	margin-left: 0px;
 	position: relative;
-	left: -25px;
+	left: -22px;
 }
 
 #themesList li a {
 	display: block;
 	background: url('../Images/categoryGrey.png') no-repeat;
-	height: 30px;
+	height: 26px;
 	padding-left: 35px;
 	line-height: 22px;
 	text-decoration: none;
+	margin-bottom: 5px;
 }
 #themesList li a:hover {
 	background: url('../Images/categoryBlue.png') no-repeat;	
