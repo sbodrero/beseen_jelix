@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+
+
+<input ref="title" required="true" maxlength="100">
+	<label>Title</label>
+</input>
+
+<textarea ref="text" required="true">
+	<label>Text</label>
+</textarea>
+
+<input ref="date" required="true" type="datetime">
+	<label>Date</label>
+</input>
+
+<upload ref="image" mimetype="image/jpeg;image/pjpeg;image/png" maxsize="20000">
+<label>Votre photo</label>
+</upload>
+
+<input ref="theme_id" required="true">
+	<label>Theme</label>
+</input>
+
+<submit ref="_submit">
+	<label>ok</label>
+</submit>
+</form>

@@ -1,0 +1,90 @@
+AddHandler php5-script .php
+SetEnv PHP_VER 5
+Options +Multiviews
+AcceptPathInfo on
+
+#for 1&1
+#AddType x-mapp-php5 .php
+#AddHandler x-mapp-php5 .php
+
+#AddType x-mapp-php5 .php .php3 .php4 .htm .html
+#AddHandler x-mapp-php5 .php .php3 .php4 .htm .html
+
+allow from all
+
+Options -Indexes
+
+# Force the latest IE version, in various cases when it may fall back to IE7 mode
+#  github.com/rails/rails/commit/123eb25#commitcomment-118920
+# Use ChromeFrame if it's installed for a better experience for the poor IE folk
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    BrowserMatch MSIE ie
+    Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+  </IfModule>
+</IfModule>
+
+# disable ETag as it is incompatible with deflate
+#FileETag MTime Size
+FileETag None
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    ########## Begin - Rewrite rules to block out some common exploits
+    ## If you experience problems on your site block out the operations listed below
+    ## This attempts to block the most common type of exploit `attempts` to Jelix !
+    #
+    # Block out any script trying to set a TO_BE_DEFINED value through the URL
+    #### RewriteCond %{QUERY_STRING} TO_BE_DEFINED(=|\%3D) [OR]
+    # Block out any script trying to base64_encode crap to send via URL
+    RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [OR]
+    # Block out any script that includes a <script> tag in URL
+    RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+    # Block out any script trying to set a PHP GLOBALS variable via URL
+    RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+    # Block out any script trying to modify a _REQUEST variable via URL
+    RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+    # Send all blocked request to homepage with 403 Forbidden error!
+    RewriteRule ^(.*)$ index.php [F,L]
+    #
+    ########## End - Rewrite rules to block out some common exploits
+
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/themes/
+    RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
+
+<IfModule mod_deflate.c>
+        AddOutputFilterByType DEFLATE text/html
+        AddOutputFilterByType DEFLATE text/plain
+        AddOutputFilterByType DEFLATE text/css
+        AddOutputFilterByType DEFLATE text/xml
+        AddOutputFilterByType DEFLATE text/javascript
+        AddOutputFilterByType DEFLATE image/svg+xml
+
+        AddOutputFilterByType DEFLATE application/x-httpd-php
+        AddOutputFilterByType DEFLATE application/x-httpd-fastphp
+        AddOutputFilterByType DEFLATE application/xhtml+xml
+        AddOutputFilterByType DEFLATE application/xml
+        AddOutputFilterByType DEFLATE application/rss+xml
+        AddOutputFilterByType DEFLATE application/atom_xml
+        AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+#<IfModule mod_expires.c>
+#    ExpiresActive On
+#        ExpiresDefault         "access plus 15 minutes"
+#        ExpiresByType application/rss+xml "access plus 15 minutes"
+#        ExpiresByType application/atom_xml "access plus 15 minutes"
+#        ExpiresByType image/*  "access plus 1 day"
+#        ExpiresByType video/x-flv "access plus 1 day"
+#        ExpiresByType application/x-shockwave-flash "access plus 1 day"
+#        ExpiresByType image/x-icon "access plus 1 year"
+#        ExpiresByType text/css "access plus 10 years"
+#        ExpiresByType application/pdf "access plus 10 years"
+#        ExpiresByType application/x-javascript  "access plus 10 years"
+#</IfModule>

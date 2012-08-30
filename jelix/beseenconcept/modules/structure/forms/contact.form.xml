@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+
+    <input ref="name" type="string" maxlength="64" required="false">
+        <label locale="structure~string.contact.name.label"/>
+        <hint locale="structure~string.contact.name.help"/>
+    </input>
+
+    <input ref="email" type="email" required="true">
+        <label locale="structure~string.contact.email.label"/>
+        <hint locale="structure~string.contact.email.help" />
+    </input>
+
+    <textarea ref="message" cols="50" rows="10" required="true" maxlength="2000">
+        <label locale="structure~string.contact.message.label"/>
+        <hint locale="structure~string.contact.message.help" />
+    </textarea>    
+
+    <submit ref="nextstep">
+        <label locale="structure~string.contact.buttons.label" />
+    </submit>
+</form>

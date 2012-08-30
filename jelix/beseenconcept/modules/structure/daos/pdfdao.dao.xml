@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="pdfDownloads" realname="pdfDownloads" primarykey="id" />
+    </datasources>
+    <record>
+        <property name="id" fieldname="id" datatype="int" autoincrement="true"/>
+        <property name="name" fieldname="name" datatype="string" required="true" maxlength="100"/>
+        <property name="count" fieldname="count" datatype="int" required="true"/>
+        <!--<property name="" fieldname="" datatype="string/int/float/date"
+        required="yes" maxlength="" minlength="" regexp="" sequence=""
+        updatepattern="" insertpattern="" selectpattern=""/>-->
+    </record>
+    <factory>
+        <method name="findCountByName" type="selectFirst">
+            <parameter name="name" />
+            <conditions>
+                <eq property="name" expr="$name" />
+            </conditions>
+        </method>
+        <method type="update" name="updateCountByName">
+            <parameter name="name" />
+            <parameter name="count" />
+            <conditions>
+                <eq property="name" expr="$name" />
+            </conditions>
+            <values>
+                <value property="count" expr="$count"/>
+            </values>
+        </method>
+    </factory>
+</dao>

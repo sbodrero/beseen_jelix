@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://jelix.org/ns/module/1.0">
+    <info id="structureyourwebsite.undefined" name="structure" createdate="2012-08-15">
+        <version date="2012-08-15">0.1pre</version>
+        <label lang="en_EN">structure</label>
+        <description lang="en_EN" />
+        <license URL="">All rights reserved</license>
+        <copyright>2011 your name</copyright>
+        <creator name="your name" email="your-email@yourwebsite.undefined" active="true"/>
+        <!--<contributor name="hisname" email="hisemail@yoursite.undefined" active="true" since="" role=""/>-->
+        <homepageURL>http://www.yourwebsite.undefined</homepageURL>
+    </info>
+    <dependencies>
+        <jelix minversion="1.4b1" maxversion="1.4b1.*"/>
+    </dependencies>
+</module>

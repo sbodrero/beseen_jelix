@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="news" realname="news" primarykey="id" />
+        <foreigntable name="themes" realname="themes" primarykey="theme_id" onforeignkey="theme_id" />
+    </datasources>
+    <record>
+        <property name="id" fieldname="id" datatype="int" autoincrement="true"/>
+        <property name="title" fieldname="title" datatype="string" required="true" maxlength="100"/>
+        <property name="text" fieldname="text" datatype="text" required="true"/>
+        <property name="date" fieldname="date" datatype="datetime" required="true"/>
+        <property name="image" fieldname="image" datatype="string" required="true" maxlength="255"/>
+        <property name="theme_id" fieldname="theme_id" datatype="int" required="true" />
+        <property name="theme_name" fieldname="theme_name" datatype="string" table="themes" />
+        <!--<property name="" fieldname="" datatype="string/int/float/date"
+        required="yes" maxlength="" minlength="" regexp="" sequence=""
+        updatepattern="" insertpattern="" selectpattern=""/>-->
+    </record>
+    <factory>
+        <method name="findAllAndOrder" type="select">
+            <order>
+                <orderitem property="date" way="desc" />
+            </order>
+        </method>-->
+    </factory>
+</dao>

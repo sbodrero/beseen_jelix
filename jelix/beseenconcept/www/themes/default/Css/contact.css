@@ -1,0 +1,94 @@
+@-webkit-keyframes pulse {
+0% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+}
+50% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+}
+100% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+}
+}
+
+@keyframes pulse {
+0% {
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+}
+50% {
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+}
+100% {
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+}
+}
+
+label, input, textarea, .mceEditor {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	margin-top: 10px;
+    margin-left: 18px;
+}
+
+input, textarea {
+	width: 280px;
+    border: none;
+    color: #666;
+    background-color: #fff;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input {
+    height: 25px;
+}
+
+textarea {
+    height: 75px;
+    padding-top: 5px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    -webkit-animation: pulse 1.5s infinite ease-in-out;
+}
+
+input[type='submit'] {
+    width: 115px;
+    height: 44px;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    background-image: url('../Images/sendButton.png');
+    background-repeat: no-repeat;
+    position: relative;
+    left: 200px;
+}
+
+#form {
+    width: 340px;
+    height: 240px;
+    background-image: url('../Images/form.png');
+    background-repeat: no-repeat;
+}
+
+.actionsFormItem {
+	text-align: center;
+}
+
+#jforms_structure_contact_errors {
+    display: none !important;
+}
+
+#jforms_structure_contact {
+    padding-top: 15px;
+    padding-bottom: 20px
+}
+
+.controlErrorMsg {
+    display: none;
+}

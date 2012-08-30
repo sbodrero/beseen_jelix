@@ -1,0 +1,146 @@
+label {
+	padding-left: 5px;
+}
+
+label, input, textarea {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	margin-top: 10px;
+}
+
+input, textarea {
+	width: 300px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type='submit'] {
+	margin-left: 15px;
+	margin-bottom: 10px;
+	width: 160px;
+	padding: 2px;
+}
+
+ul {
+    list-style: square inside;
+}
+
+ul li {
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+#contact {
+    margin-left: 20px;
+    margin-bottom: 45px;
+    margin-right: 30px;
+}
+
+#contact hr {
+    margin-bottom: 30px;
+}
+
+#mainFormtBlock {
+    width: 500px;
+    background-color: #4F2121;
+    padding-top: 10px;
+    margin: 5px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.85);
+    -moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.actionsFormItem {
+	text-align: center;
+}
+
+.infoTile {
+	width: 460px;
+	text-align: justify;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+#accntInfo {
+    padding-bottom: 10px;
+}
+
+span.controlErrorMsg {
+    display: none;
+}
+.actionsFormItem {
+    text-align: center;
+}
+
+#jforms_structure_contact_errors {
+    display: none !important;
+}
+
+#jforms_structure_contact {
+    padding-top: 15px;
+    padding-bottom: 20px
+}
+
+.controlErrorMsg {
+    display: none;
+}
+
+#formZone, #mailZone, #telephoneZone, #addressZone {
+    padding: 10px;
+}
+
+#formZone {
+    width: 550px;
+    height: 537px;
+    float: left;
+    margin-right: 50px;
+}
+
+#formZone hr {
+    width: 550px;
+}
+
+#mailZone, #telephoneZone, #addressZone {
+    float: left;
+    width: 270px;
+}
+
+#addressZone p {
+    margin-bottom: 2px;
+}
+
+#telephoneZone a {
+    text-decoration: none;
+}
+
+.contactImg {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+#telephoneZone, #addressZone {
+    margin-top: 20px;
+}
+
+#mainBlockContact {
+
+}
+
+#formZone, #telephoneZone {
+    margin-bottom: 70px;
+}
