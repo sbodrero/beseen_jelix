@@ -14,7 +14,10 @@ class defaultCtrl extends jController {
     */
     function index() {
     	$newsDao = jDao::get('newsdao');
-    	$newsList = $newsDao->findAllAndOrder();
+    	$list = $newsDao->findAllAndOrder();
+
+        $toolsSrv = jClasses::getService( 'tools' );
+        $newsList = $toolsSrv->prepareArrayForNewslist($list);
 
     	$tpl = new jTpl();
     	$tpl->assign('newsList',$newsList);

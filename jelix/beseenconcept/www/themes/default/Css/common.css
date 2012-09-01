@@ -320,10 +320,6 @@ iframe {
 }
 
 .news p {
-	height: 100px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow : ellipsis;
 	text-align: justify;	
 }
 
