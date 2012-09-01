@@ -1,3 +1,4 @@
+{zone 'structure~msgNotices', array('messageTypeRegex'=>'/^msg(Notice|Warning|Error)/')}
 <div id="newsPage">
 	<h1 class="indent">News</h1>
 	{if(isset($newsList))}
@@ -7,7 +8,8 @@
 				<h2>{$news->title}</h2>
 				Par Sébastien&nbsp;le&nbsp;{$news->date}&nbsp;dans&nbsp;<a href="">{$news->theme_name}</a><a href=""><img class="smallImage" src="{$j_themepath}Images/bulle.png" alt="">100&nbsp;commentaires</a>
 				<hr>
-				<img class="mainPicture" src="{$j_themepath}Images/news/{$news->image}.png" alt="{$news->image}"><p>{$news->text}</p>
+				<img class="mainPicture" src="{$j_themepath}Images/news/{$news->image}" alt="{$news->image}"><p>{$news->text}</p>
+				<a href=""></a>
 				<img src="{$j_themepath}Images/bottomNewsRibbon.png" alt="Ruban news bas" class="bottomRibbon">
 			</div>
 		{/foreach}

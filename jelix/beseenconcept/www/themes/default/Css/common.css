@@ -247,7 +247,7 @@ div.noticeBox span {
 
 .floatLeft {
 	float: left;
-	margin-right: 15px;
+	margin-right: 14px;
 }
 
 .floatLeft ul {
@@ -328,6 +328,7 @@ iframe {
 }
 
 .mainPicture {
+	height: 100px;
 	width: 100px;
 	float: left;
 	margin-right: 20px;

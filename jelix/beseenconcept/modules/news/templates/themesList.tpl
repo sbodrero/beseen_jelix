@@ -7,7 +7,7 @@
 			<li><a href="{jurl 'news~showNewsByTheme', array('theme'=>$theme->theme_name)}">{$theme->theme_name}()</a></li>
 		{/foreach}
 		{if $isConnected}
-			<li><a href="{jurl 'news~addNews'}">Ajouter une news</a></li>
+			<li><a href="{jurl 'news~prepareNewsForm'}">Ajouter une news</a></li>
 		{/if}
 	</ul>
 </div>

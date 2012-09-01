@@ -3,24 +3,24 @@
 
 
 <input ref="title" required="true" maxlength="100">
-	<label>Title</label>
+    <label locale="string.news.title.label"/>
+    <hint locale="string.news.title.help"/>
 </input>
 
 <textarea ref="text" required="true">
-	<label>Text</label>
+    <label locale="string.news.text.label"/>
+    <hint locale="string.news.text.help"/>
 </textarea>
 
-<input ref="date" required="true" type="datetime">
-	<label>Date</label>
-</input>
-
-<upload ref="image" mimetype="image/jpeg;image/pjpeg;image/png" maxsize="20000">
-<label>Votre photo</label>
+<upload ref="image" mimetype="image/jpeg;image/pjpeg;image/png" maxsize="2000000"> 
+    <label locale="string.news.image.label"/>
+    <hint locale="string.news.image.help"/>
 </upload>
 
-<input ref="theme_id" required="true">
+<menulist ref="theme_id" required="true">
 	<label>Theme</label>
-</input>
+	<datasource dao="news~themes" method="findAll" labelproperty="theme_name" valueproperty="theme_id"/>
+</menulist>
 
 <submit ref="_submit">
 	<label>ok</label>

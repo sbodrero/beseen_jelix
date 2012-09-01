@@ -6,7 +6,7 @@
     <record>
         <property name="id" fieldname="id" datatype="int" autoincrement="true"/>
         <property name="name" fieldname="name" datatype="string" required="true" maxlength="100"/>
-        <property name="count" fieldname="count" datatype="int" required="true"/>
+        <property name="count" fieldname="count" datatype="int" insertpattern="Now()" updatepattern="Now()" required="true"/>
         <!--<property name="" fieldname="" datatype="string/int/float/date"
         required="yes" maxlength="" minlength="" regexp="" sequence=""
         updatepattern="" insertpattern="" selectpattern=""/>-->
