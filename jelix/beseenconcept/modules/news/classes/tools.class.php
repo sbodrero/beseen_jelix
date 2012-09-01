@@ -20,7 +20,8 @@ class tools {
 		$preparedList[] ='';
         foreach ($list as $news) {
         	if(strlen($news->text) > 200) {
-            	$news->text = substr($news->text,0,200); 		
+            	$news->text = substr($news->text,0,200); 
+            	$news->textShort = true;		
         	}
 			$preparedList[] = $news;
         }

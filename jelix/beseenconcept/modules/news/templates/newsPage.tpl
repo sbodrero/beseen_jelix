@@ -9,7 +9,7 @@
 				Par Sébastien&nbsp;le&nbsp;{$news->date}&nbsp;dans&nbsp;<a href="">{$news->theme_name}</a><a href=""><img class="smallImage" src="{$j_themepath}Images/bulle.png" alt="">100&nbsp;commentaires</a>
 				<hr>
 				<img class="mainPicture" src="{$j_themepath}Images/news/{$news->image}" alt="{$news->image}">
-				<p>{$news->text}</p>
+				<p>{$news->text}{if $news->textShort}...{/if}</p>
 				<img src="{$j_themepath}Images/bottomNewsRibbon.png" alt="Ruban news bas" class="bottomRibbon">
 			</div>
 		{/foreach}
