@@ -12,7 +12,20 @@ class defaultCtrl extends jController {
     /**
     *
     */
+
+    public $pluginParams = array(
+        '*'=>array('auth.required'=>false),
+        'deleteNews'=>array('auth.required'=>true),
+        'editNews'=>array('auth.required'=>true),
+     );
+
+    protected $isConnected = false;
+
     function index() {
+        if (jAuth::isConnected()) {
+           $this->isConnected = true; 
+        }
+
     	$newsDao = jDao::get('newsdao');
     	$list = $newsDao->findAllAndOrder();
 
@@ -21,6 +34,7 @@ class defaultCtrl extends jController {
 
     	$tpl = new jTpl();
     	$tpl->assign('newsList',$newsList);
+        $tpl->assign('isConnected', $this->isConnected);
 
         $rep = $this->getResponse('html');
         $rep->title .=  jLocale::get('string.newsTitle');
@@ -31,6 +45,10 @@ class defaultCtrl extends jController {
         $rep->body->assign('MAIN', $tpl->fetch('newsPage'));
 
         return $rep;
+    }
+
+    function showNews() {
+
     }
 
     function showNewsByTheme() {
@@ -72,7 +90,6 @@ class defaultCtrl extends jController {
     }
 
     function saveNews() {
-        jLog::dump($_FILES);
 
         $form = jForms::fill('newsform');
         if (!$form->check()) {
@@ -107,7 +124,26 @@ class defaultCtrl extends jController {
 
             return $rep;
         }        
+    }
+
+    function editNews() {
+
     } 
+
+    function deleteNews() {
+        $id = $this->param('id');
+        $newsDao = jDao::get('newsdao');
+
+        if($deletingNews = $newsDao->delete($id)) {
+            jMessage::add( jLocale::get('string.news.newsDelete'), 'msgNoticeContact' );
+        } else {
+            jMessage::add( jLocale::get('string.news.newsDeleteError'), 'msgErrorContact' );
+        }
+
+        $rep= $this->getResponse('redirect');
+        $rep->action='default:index';
+        return $rep;
+    }
 
 }
 

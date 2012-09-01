@@ -291,7 +291,7 @@ iframe {
 	top: 15px;
 	left: 600px;
     width: 300px;
-    height: 505px;
+    min-height: 200px;
     padding: 30px 20px 20px 20px;
     border-bottom: 25px solid #161616;
 }
@@ -341,10 +341,18 @@ iframe {
 	left: -5px;
 }
 
-.bottomRibbon {
+.toolsBar {
 	position: absolute;
 	right: 15px;
 	bottom: 15px;
+}
+
+.toolsBar a {
+	margin-left: 15px;
+}
+
+.toolsBar img {
+	vertical-align: middle;
 }
 
 .dotBkg {
