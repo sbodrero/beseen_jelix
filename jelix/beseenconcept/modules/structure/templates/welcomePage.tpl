@@ -8,10 +8,8 @@
 	<hr>
 	<div class="args">
 		<img src="{$j_themepath}Images/guarantee.png" alt="medaille garantie">
-		<div class="scalable">
 		<h3>Sécurisés</h3>
 		<p>Toute la puissance des frameworks PHP tels que Jelix, CodeIgniter, Cake.</p>
-		</div>
 	</div>
 	<div class="args">
 		<img src="{$j_themepath}Images/guarantee.png" alt="medaille garantie">
