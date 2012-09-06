@@ -89,6 +89,13 @@ input[type='submit'] {
     padding-bottom: 20px
 }
 
+.jforms-suggest {
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
 .controlErrorMsg {
     display: none;
 }

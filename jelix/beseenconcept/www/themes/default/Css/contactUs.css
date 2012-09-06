@@ -1,5 +1,5 @@
 label {
-	padding-left: 5px;
+	padding-left: 10px;
 }
 
 label, input, textarea {
@@ -64,6 +64,13 @@ p {
     border-radius: 10px;
 }
 
+.ie7 #mainFormtBlock , .ie8 #mainFormtBlock  {
+    text-shadow: 0 1px 1px rgba(0,0,0,0.85);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    behavior: url('jelix/js/PIE.htc');
+}
+
 .actionsFormItem {
 	text-align: center;
 }
@@ -104,6 +111,14 @@ span.controlErrorMsg {
     padding: 10px;
 }
 
+.ie7 #formZone, {
+    padding-bottom: 60px;
+}
+
+ .ie8 #formZone {
+    padding-bottom: 20px
+ }
+
 #formZone {
     width: 550px;
     height: 537px;
@@ -143,4 +158,8 @@ span.controlErrorMsg {
 
 #formZone, #telephoneZone {
     margin-bottom: 70px;
+}
+
+.ie7 #footer {
+    margin-top: 50px;
 }

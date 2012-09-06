@@ -18,7 +18,7 @@ jQuery(function (){
 </div>
 
 <div id="contact">
-    <div id="mainFormtBlock" class="colorAndRadius">
+    <div id="mainFormtBlock" >
         <div class="userForm">
             {form $form, 'structure~default:save',
             array(),'', array('errorDecorator'=>'AppErrorDecorator', 'helpDecorator'=>'jFormsJQHelpDecoratorQtip')}

@@ -10,7 +10,7 @@ jQuery(function (){
 //]]</script>
 <h2>Un projet ? Une question ?</h2>
 <hr>
-<div id="form">
+<div id="form" data-attr="{$placeHolderFlag}">
 	{form $form, 'structure~default:save'}
 		{formcontrols array('name','email','message')}
                 <div class="userFormItem {ifctrl 'message'}userFormMessage{/ifctrl}">
@@ -20,3 +20,13 @@ jQuery(function (){
   		<div> {formsubmit} </div>
   	{/form}
 </div>
+<script type="text/javascript">
+{literal}
+	if($('#form').attr('data-attr') == 1) {
+		$('#jforms_structure_contact_name, #jforms_structure_contact_email, #jforms_structure_contact_message').bind('click focus', function() {
+			$(this).attr('value','');
+			$(this).unbind();
+		});	
+	}
+{/literal}
+</script>

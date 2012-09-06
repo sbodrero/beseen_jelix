@@ -40,7 +40,13 @@ class myHtmlResponse extends jResponseHtml {
                     closeLink: \'Fermer cette fenêtre\',
                     closeMessage: \'\',
                     closeCookie: true
-        });});  </script><![endif]-->' ) ;        
+        });});  </script><![endif]-->' ) ;
+
+        $this->addHeadContent('<!--[if lte IE 7]><body class="ie7"><![endif]-->');
+        //$this->addHeadContent('<!--[if lte IE 7]><script src="'. $script .'ie7.js"></script><![endif]-->');
+        //$this->addHeadContent('<!--[if lte IE 8]><script src="'. $script .'ie.js"></script><![endif]-->');
+        $this->addHeadContent('<!--[if IE 8]><body class="ie8"><![endif]-->');
+        $this->addHeadContent('<!--[if IE]><body class="ie"><![endif]-->');        
     }
 
     protected function outputDoctype (){
@@ -53,7 +59,6 @@ class myHtmlResponse extends jResponseHtml {
         // main template, the settings of the response etc..
 
         $this->title .=  (( $this->title != '' ) ? ' - ' : ''). jLocale::get('structure~string.app.title');        
-
         $this->body->assignIfNone('MAIN','<p>no content</p>');
     }
 }

@@ -6,7 +6,7 @@
 		<p>Vous êtes sur le site <b>beseenconcept.fr</b><br>Nom de domaine possèdé et représenté par Sébastien Bodrero.</p>
 		<p>Ce site et l'ensemble des informations présentées sont soumis à la règlementation française en vigueur.</p>
 		<p>Contenu du site non contractuel suceptible d'être enrichi, modifié et supprimé.</p>
-		<p>J'exécute mes missions en tant que salarié portée (contrat tripartite).<br>
+		<p>J'exécute mes missions en freelance en tant que salarié portée (contrat tripartite), en cdd ou cdi au sein de votre structure et/ou en télétravail.<br>
 			N'hesitez pas à me poser des questions à ce sujet</p>
 	</div>
 	<div class="dotBkg bottom">

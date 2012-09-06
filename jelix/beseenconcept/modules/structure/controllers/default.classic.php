@@ -94,7 +94,7 @@ class defaultCtrl extends jController {
         	// invalide : on redirige vers l'action d'affichage
         	$rep = $this->getResponse('redirect');
         	$rep->action='structure~default:showWelcomePage';
-        return $rep;
+            return $rep;
     	}
         if ($form->check()) {
             $data = $form->getAllData() ;

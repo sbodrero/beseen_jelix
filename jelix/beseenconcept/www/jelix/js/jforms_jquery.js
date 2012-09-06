@@ -260,7 +260,24 @@ var jFormsJQ = {
         return false;
     }
 };
-
+function jFormsJQControlHtml(name,label){
+    this.name=name;
+    this.label=label;
+    this.required=false;
+    this.errInvalid='';this.errRequired='';
+    this.minLength=-1;this.maxLength=-1};
+    jFormsJQControlHtml.prototype.check=function(val,jfrm){
+        if(this.minLength!=-1&&val.length<this.minLength)return false;
+        if(this.maxLength!=-1&&val.length>this.maxLength)return false;return true
+    };
+    jFormsJQControlHtml.prototype.getValue=function(){
+        var frm=jFormsJQ.getForm(this.formName);
+        var elt=frm.element.elements[this.name];
+        if(!elt)return null;val=jFormsJQ.getValue(elt);
+        if(val==null)return null;val=val.replace(/<(img|object|video|svg|embed)[^>]*>/gi,'TAG');
+        val=val.replace(/<\/?[\S][^>]*>/gi,'');val=val.replace(/&[a-z]+;/gi,'');
+        val=jQuery.trim(val);if(val=='')return null;return val};
+        
 /**
  * represents a form
  */

@@ -7,10 +7,10 @@
     <hint locale="string.news.title.help"/>
 </input>
 
-<textarea ref="text" required="true">
+<htmleditor ref="text" required="true" config="default">
     <label locale="string.news.text.label"/>
     <hint locale="string.news.text.help"/>
-</textarea>
+</htmleditor>
 
 <upload ref="image" mimetype="image/jpeg;image/pjpeg;image/png" maxsize="2000000"> 
     <label locale="string.news.image.label"/>

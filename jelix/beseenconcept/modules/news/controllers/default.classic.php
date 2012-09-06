@@ -12,7 +12,6 @@ class defaultCtrl extends jController {
     /**
     *
     */
-
     public $pluginParams = array(
         '*'=>array('auth.required'=>false),
         'deleteNews'=>array('auth.required'=>true),
@@ -93,20 +92,49 @@ class defaultCtrl extends jController {
 
         $form = jForms::fill('newsform');
         if (!$form->check()) {
-            // invalide : on redirige vers l'action d'affichage
             $rep = $this->getResponse('redirect');
             $rep->action='news~default:showNewsForm';
         return $rep;
         }
         if ($form->check()) {
+
             global $gJConfig;
-            
-            $uploadDir = JELIX_APP_WWW_PATH.$gJConfig->urlengine['basePath'].'themes/'.jApp::config()->theme.'/Images/news/';
-            $uploadfile = $uploadDir . basename($_FILES['image']['name']);
-            move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
+            $uploadDirThumbs = JELIX_APP_WWW_PATH.$gJConfig->urlengine['basePath'].'themes/'.jApp::config()->theme.'/Images/news/thumbs/';
+            $uploadDirRealSize = JELIX_APP_WWW_PATH.$gJConfig->urlengine['basePath'].'themes/'.jApp::config()->theme.'/Images/news/';
+
+            if(!empty($_FILES['image'])) {
+
+                $imageNewsInfos = getimagesize($_FILES['image']['tmp_name']);
+                $newImageWidth = 100;
+                $imagereduction = ( ($newImageWidth * 100)/$imageNewsInfos[0] );
+                $newImageHeight = ( ($imageNewsInfos[1] * $imagereduction)/100 );
+                $newImage = imagecreatetruecolor($newImageWidth, $newImageHeight);    
+
+                if($imageNewsInfos['mime'] == 'image/jpeg' || $imageNewsInfos['mime'] == 'image/pjpeg') {
+                    // Creating thumbs
+                    $chosenImage = imagecreatefromjpeg($_FILES['image']['tmp_name']);                    
+                    imagecopyresampled($newImage, $chosenImage, 0, 0, 0, 0, $newImageWidth, $newImageHeight, $imageNewsInfos[0], $imageNewsInfos[1]);
+                    imagedestroy($chosenImage);
+                    imagejpeg($newImage, $uploadDirThumbs.$_FILES['image']['name'], 100);
+                    // Create light picture
+                    $chosenImage = imagecreatefromjpeg($_FILES['image']['tmp_name']);
+                    $newImage = imagecreatetruecolor($imageNewsInfos[0], $imageNewsInfos[1]);
+                    imagecopyresampled($newImage, $chosenImage, 0, 0, 0, 0, $imageNewsInfos[0], $imageNewsInfos[1], $imageNewsInfos[0], $imageNewsInfos[1]);
+                    imagejpeg($newImage, $uploadDirRealSize.$_FILES['image']['name'], 60);
+                }
+
+                if($imageNewsInfos['mime'] == 'image/png') {
+
+                    $chosenImage = imagecreatefrompng($_FILES['image']['tmp_name']);
+                    imagecolortransparent($chosenImage);
+                    imagecopyresampled($newImage, $chosenImage, 0, 0, 0, 0, $newImageWidth, $newImageHeight, $imageNewsInfos[0], $imageNewsInfos[1]);
+                    imagedestroy($chosenImage);
+                    imagepng($newImage, $uploadDirThumbs.$_FILES['image']['name']);
+                    move_uploaded_file($_FILES['image']['tmp_name'], $uploadDirRealSize);
+                }                
+            }
 
             $data = $form->getAllData() ;
-
             $newsDao = jDao::get('newsdao');
             $record = jDao::createRecord('newsdao');
             $record->title = $data['title'];
