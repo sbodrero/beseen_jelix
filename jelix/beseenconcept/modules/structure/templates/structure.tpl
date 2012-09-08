@@ -34,12 +34,12 @@
 	</a>
 	<a href="mailto:sebdebillere@hotmail.fr" titile="email"><img src="{$j_themepath}Images/email-front.png" alt="Logo Email">
 	</a>
-	<a href="">
+	<a a href="{jurl 'jauth~login:form'}" title="Login">
 		<img src="{$j_themepath}Images/user.png" alt="Authentification">
 	</a>
 </div>
 
-{*========================== analytics and twitter=======================
+{*========================== analytics and twitter=======================*}
 {if $useGoogleAnalytics}
 {literal}
 <script type="text/javascript">
@@ -56,4 +56,4 @@ jQuery(function (){
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 {/literal}
-{/if}*}
+{/if}

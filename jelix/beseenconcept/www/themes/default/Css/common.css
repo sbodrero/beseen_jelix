@@ -28,8 +28,12 @@ ul {
 	list-style-type: none;
 }
 
+h1 {
+	font-size: 36px;
+}
+
 h2 {
-	color: #472626;
+	color: #472626;	
 	font-size: 24px;
 	font-weight: normal;
 }
@@ -41,7 +45,7 @@ hr {
 }
 
 blockquote {
-	margin-top: 35px;
+	margin-top: 10px;
 	margin-bottom: 60px;
 	padding: 0px 122px 0px 122px;
 	background-image: url('../Images/quote.png');
@@ -58,6 +62,11 @@ blockquote p {
 	font-style: italic;
 }
 
+iframe {
+	width: 400px;
+	height: 180px;
+}
+
 .indent { text-indent: -9999px;}
 
 .textShadow {
@@ -68,6 +77,10 @@ blockquote p {
 	width: 940px;
 	margin: 0 auto;
 }
+
+/**********************************************/
+/*					header					  */
+/**********************************************/	
 
 #header {
 	height: 135px;
@@ -99,6 +112,10 @@ blockquote p {
 #header img:hover {
 	opacity: 1;	
 }
+
+/**********************************************/
+/*					Menu					  */
+/**********************************************/
 
 #nav ul {
 	margin: 0px;
@@ -140,15 +157,24 @@ blockquote p {
 	border-radius: 14px;
 }
 
+/**********************************************/
+/*	Main Pictures call, about, news ...		  */
+/**********************************************/
+
 #picture {
 	text-align: center;
 	padding-top: 52px;
 	height: 250px;
 }
 
+/**********************************************/
+/*				Welcome Page				  */
+/**********************************************/
+
 #leftSide {
 	float: left;
 	width: 600px;
+	margin-bottom: 35px;
 }
 
 #leftSide hr {
@@ -186,6 +212,10 @@ blockquote p {
 	float: left;
 }
 
+/**********************************************/
+/*					footer					  */
+/**********************************************/
+
 #footer {
 	clear: both;
 	height: 75px;
@@ -198,6 +228,10 @@ blockquote p {
 #footer a:hover {
 	text-decoration: none;
 }
+
+/**********************************************/
+/*					messages boxes			  */
+/**********************************************/
 
 .noticeBox {
     width:905px;
@@ -218,6 +252,7 @@ blockquote p {
 	top: 18px;
 	left: 130px;
 }
+
 div.noticeBox a.closeCross, a.modalCloseImg  {
     float: right;
     margin: 2px 0 0 10px;
@@ -235,32 +270,9 @@ div.noticeBox span {
 	opacity: 0;
 }
 
-#contractTypes {
-	list-style: square inside;
-}
-
-#contractTypes li {
-	margin-bottom: 2px;
-}
-
-#about {
-	margin: 70px auto;
-}
-
-#about p {
-	margin-bottom: 10px;
-}
-
-#about ul {
-	margin-bottom: 15px;
-	margin-top:	15px;
-}
-
-#about h3 {
-	font-size: 16px;
-	font-weight: normal;
-	text-decoration: underline;
-}
+/**********************************************/
+/*			     Contact page				  */
+/**********************************************/
 
 .floatLeft {
 	float: left;
@@ -275,23 +287,18 @@ div.noticeBox span {
 	text-align: center;
 }
 
-#virtualCard {
-	clear: both;
-}
-
 .alignMiddleAndMargin {
 	vertical-align: middle;
 	margin-right: 5px;
 }
 
-iframe {
-	width: 400px;
-	height: 180px;
-}
+/**********************************************/
+/*				News page					  */
+/**********************************************/
 
-#newsPage {
+#newsWrapper {
 	position: relative;
-	margin-top: 45px;	
+	margin-bottom: 70px;
 }
 
 .news {
@@ -305,7 +312,7 @@ iframe {
 
 #newsMenuContainer {
 	position: absolute;
-	top: 15px;
+	top: 0px;
 	left: 600px;
     width: 300px;
     min-height: 200px;
@@ -334,10 +341,6 @@ iframe {
 }
 #themesList li a:hover {
 	background: url('../Images/categoryBlue.png') no-repeat;	
-}
-
-#newsPage h2 {
-	margin-top: 10px;
 }
 
 .news p {
@@ -400,6 +403,21 @@ iframe {
 	padding: 20px;
 }
 
+.bottom p {
+	margin-bottom: 10px;
+}
+
+.bottom ul {
+	margin-bottom: 15px;
+	margin-top:	15px;
+}
+
+.bottom h3 {
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
 .newsBottom {
 	height: 20px;
 	background-color: #000000;
@@ -410,9 +428,26 @@ iframe {
 	display: none;
 }
 
+#me {
+	margin-bottom: 70px;
+}
+
 .smallImage {
 	width: 20px;
 	vertical-align: middle;
 	margin-left: 10px;
 	margin-right: 5px;
+}
+
+#newsdetails img {
+	float: left;
+	width: 250px
+}
+
+/**********************************************/
+/*				About page					  */
+/**********************************************/
+
+#virtualCard {
+	clear: both;
 }

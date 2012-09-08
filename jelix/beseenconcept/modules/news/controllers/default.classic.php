@@ -47,7 +47,22 @@ class defaultCtrl extends jController {
     }
 
     function showNews() {
+        $newsId = $this->param('id');            
 
+        if(!empty($newsId)) {
+            $newsDao = jDao::get('newsdao');
+            $newsDetails = $newsDao->findNewsDetails($newsId  );
+        }
+
+        $tpl = new jTpl();
+        $tpl->assign('newsDetails',$newsDetails);
+
+        $frontImage = 'news';
+
+        $rep = $this->getResponse('html');
+        $rep->body->assign('frontImage', $frontImage);
+        $rep->body->assign( 'MAIN', $tpl->fetch('newsDetails') );
+        return $rep;
     }
 
     function showNewsByTheme() {
@@ -159,18 +174,19 @@ class defaultCtrl extends jController {
     } 
 
     function deleteNews() {
-        $id = $this->param('id');
-        $newsDao = jDao::get('newsdao');
 
-        if($deletingNews = $newsDao->delete($id)) {
-            jMessage::add( jLocale::get('string.news.newsDelete'), 'msgNoticeContact' );
-        } else {
-            jMessage::add( jLocale::get('string.news.newsDeleteError'), 'msgErrorContact' );
-        }
+            $id = $this->param('id');
+            $newsDao = jDao::get('newsdao');
 
-        $rep= $this->getResponse('redirect');
-        $rep->action='default:index';
-        return $rep;
+            if($deletingNews = $newsDao->delete($id)) {
+                jMessage::add( jLocale::get('string.news.newsDelete'), 'msgNoticeContact' );
+            } else {
+                jMessage::add( jLocale::get('string.news.newsDeleteError'), 'msgErrorContact' );
+            }
+
+            $rep= $this->getResponse('redirect');
+            $rep->action='default:index';
+            return $rep;
     }
 
 }

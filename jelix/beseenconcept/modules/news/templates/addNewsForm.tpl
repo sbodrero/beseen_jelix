@@ -22,6 +22,3 @@ jQuery(function (){
   		<div> {formsubmit} </div>
   	{/form}
 </div>
-<script type="text/javascript">
-	$('input[type="file"]').attr('multiple','true');
-</script>

@@ -10,7 +10,7 @@ jQuery(function (){
 //]]</script>
 <h2>Un projet ? Une question ?</h2>
 <hr>
-<div id="form" data-attr="{$placeHolderFlag}">
+<div id="form">
 	{form $form, 'structure~default:save'}
 		{formcontrols array('name','email','message')}
                 <div class="userFormItem {ifctrl 'message'}userFormMessage{/ifctrl}">

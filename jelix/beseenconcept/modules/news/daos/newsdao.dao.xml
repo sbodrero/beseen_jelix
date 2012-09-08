@@ -21,6 +21,12 @@
             <order>
                 <orderitem property="date" way="desc" />
             </order>
-        </method>-->
+        </method>
+        <method name="findNewsDetails" type="select">
+            <parameter name="newsId" />
+            <conditions>
+                <eq property="id" expr="$newsId" />
+            </conditions>
+        </method>
     </factory>
 </dao>

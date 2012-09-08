@@ -11,20 +11,15 @@
         updatepattern="" insertpattern="" selectpattern=""/>-->
     </record>
     <factory>
-        <!--<method name="findByStage" type="select/selectfirst/delete/update/php">
-            <parameter name="" />
-            <values>
-                <value property="" value="" />
-            </values>
-            <conditions logic="and/or">
-                <eq property="" value="" />
-            </conditions>
-            <order>
-                <orderitem property="" way="asc/desc" />
-            </order>
-            <limit offset="" count=""/>
+        <method name="findThemesAndItsNewsCount" type="php">
             <body><![CDATA[
+                $sql ="SELECT themes.theme_id, themes.theme_name, COUNT(news.theme_id) as themes_news_count
+                FROM themes LEFT JOIN news
+                ON themes.theme_id = news.theme_id";
+                $rs = $this->_conn->query($sql);
+                $rs->setFetchMode(8,$this->_DaoRecordClassName);
+                return $rs;
             ]]></body>
-        </method>-->
+        </method>
     </factory>
 </dao>

@@ -21,7 +21,8 @@ class themesZone extends Jzone {
 	}
 
     $factThemes = jDao::get('news~themes');
-    $themesList = $factThemes->findAll();
+    //$themesList = $factThemes->findAll();
+    $themesList = $factThemes->findThemesAndItsNewsCount();
 
     $this->_tpl->assign( 'isConnected', $isConnected);
     $this->_tpl->assign( 'themesList', $themesList);
