@@ -21,6 +21,7 @@ class defaultCtrl extends jController {
     protected $isConnected = false;
 
     function index() {
+
         if (jAuth::isConnected()) {
            $this->isConnected = true; 
         }
@@ -30,6 +31,7 @@ class defaultCtrl extends jController {
 
         $toolsSrv = jClasses::getService( 'tools' );
         $newsList = $toolsSrv->prepareArrayForNewslist($list);
+        
 
     	$tpl = new jTpl();
     	$tpl->assign('newsList',$newsList);
@@ -47,6 +49,7 @@ class defaultCtrl extends jController {
     }
 
     function showNews() {
+
         $newsId = $this->param('id');            
 
         if(!empty($newsId)) {
@@ -70,13 +73,13 @@ class defaultCtrl extends jController {
     }
 
     function prepareNewsForm() {
+
         jForms::clean('newsform');
         $form = jForms::create('newsform');
         $form = jForms::clear('newsform');
 
         jMessage::clear('msgNoticeContact');
 
-        // redirect to step 1b
         $rep= $this->getResponse('redirect');
         $rep->action='default:showNewsForm';
         return $rep;
@@ -139,11 +142,12 @@ class defaultCtrl extends jController {
                 }
 
                 if($imageNewsInfos['mime'] == 'image/png') {
-
+                    // Creating thumbs
                     $chosenImage = imagecreatefrompng($_FILES['image']['tmp_name']);
                     imagecolortransparent($chosenImage);
                     imagecopyresampled($newImage, $chosenImage, 0, 0, 0, 0, $newImageWidth, $newImageHeight, $imageNewsInfos[0], $imageNewsInfos[1]);
                     imagedestroy($chosenImage);
+                    // Move originally png to server
                     imagepng($newImage, $uploadDirThumbs.$_FILES['image']['name']);
                     move_uploaded_file($_FILES['image']['tmp_name'], $uploadDirRealSize);
                 }                

@@ -14,7 +14,7 @@
 				<img class="smallImage" src="{$j_themepath}Images/bulle.png" alt="">&nbsp;commentaires
 			</a>
 			<hr>
-			<img class="mainPicture" src="{$j_themepath}Images/news/thumbs/{$news->image}" alt="{$news->image}">
+			<img class="mainPicture" src="{$j_themepath}Images/news/thumbs/{$news->image}" alt="{$news->imageName}">
 			<p>{$news->text}{if isset($news->textShort)}...{/if}</p>
 			<div class="toolsBar">
 				{if ($isConnected)}

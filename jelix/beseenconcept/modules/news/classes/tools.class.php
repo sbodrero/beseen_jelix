@@ -16,12 +16,22 @@ class tools {
 	    imagedestroy($image);
 	}
 
+	// Return the name of an image without extension
+	public function ImageNameWithoutExt($image) {
+		$image = explode('.',$image);
+		array_pop($image);
+		$image = implode('.',$image);
+		return $image;
+	}
+
+	// Prepare the data to send to the news tpl
 	public function prepareArrayForNewslist($list) {
         foreach ($list as $news) {
         	if(strlen($news->text) > 200) {
             	$news->text = substr($news->text,0,200); 
-            	$news->textShort = true;
+            	$news->textShort = true;            	
         	}
+        	$news->imageName = $this->ImageNameWithoutExt($news->image);
 			$preparedList[] = $news;
         }
     	return $preparedList;

@@ -32,7 +32,7 @@
 	<a class="twitter-timeline"  href="https://twitter.com/sbodrero" data-widget-id="243695131553841154" title="Twitter">
 		<img src="{$j_themepath}Images/twitter.png" alt="Logo Twitter">
 	</a>
-	<a href="mailto:sebdebillere@hotmail.fr" titile="email"><img src="{$j_themepath}Images/email-front.png" alt="Logo Email">
+	<a href="mailto:sebdebillere@hotmail.fr" title="email"><img src="{$j_themepath}Images/email-front.png" alt="Logo Email">
 	</a>
 	<a a href="{jurl 'jauth~login:form'}" title="Login">
 		<img src="{$j_themepath}Images/user.png" alt="Authentification">
