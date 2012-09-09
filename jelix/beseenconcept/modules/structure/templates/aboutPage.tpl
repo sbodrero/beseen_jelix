@@ -1,6 +1,6 @@
 <h1 class="indent">A propos</h1>
 <blockquote>
-<p>{@string.contactText@}</p>	
+<p>{@string.aboutText@}</p>	
 </blockquote>
 <div class="dotBkg bottom">
 

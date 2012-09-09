@@ -1,7 +1,7 @@
 {zone 'structure~msgNotices', array('messageTypeRegex'=>'/^msg(Notice|Warning|Error)/')}
 <h1 class="indent">News</h1>
 <blockquote>
-	<p>{@structure~string.accroche@}</p>	
+	<p>{@string.news.blockQuote@}</p>	
 </blockquote>
 <div id="newsWrapper">
 {if(isset($newsList))}
