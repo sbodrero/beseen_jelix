@@ -4,7 +4,7 @@ class contactUsZone extends jZone {
 
 	protected $_tplname='contactUs.zone';
 
-   protected function _prepareTpl(){
+   	protected function _prepareTpl(){
 
         $formSel = 'contact' ;
         $form = jForms::get($formSel);
@@ -13,6 +13,5 @@ class contactUsZone extends jZone {
         }
        	$this->_tpl->assign('form', $form);
    }	
-
 }
- ?>
+?>

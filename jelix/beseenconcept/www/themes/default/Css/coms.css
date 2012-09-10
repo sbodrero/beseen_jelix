@@ -1,0 +1,55 @@
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input, textarea {
+	margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type='submit'] {
+	position: relative;
+	top: -45px;
+	left: 350px;
+}
+
+#comsForm {
+	max-height: 290px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.userFormItem {
+	float: left;
+	margin-right: 20px;
+}
+
+.userFormItem + .userFormItem + .userFormItem +.userFormItem, input[type='submit'] {
+	clear: left;
+	display: block;
+}
+
+.userFormItem:last-child {
+	display: block;
+}
+
+.controlErrorMsg {
+    display: none;
+}
+
+#accntInfo {
+    padding-bottom: 10px;
+}
+
+span.controlErrorMsg {
+    display: none;
+}
+.actionsFormItem {
+    text-align: center;
+}
+.controlErrorMsg {
+    display: none;
+}

@@ -444,16 +444,37 @@ div.noticeBox span {
 	margin-right: 5px;
 }
 
-#newsdetails img {
-	float: left;
-	width: 250px
-}
-
 /**********************************************/
 /*				News details				  */
 /**********************************************/
+#newsDetails h1 {
+	color: #472626;	
+	font-size: 30px;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
 
+#newsDetails p {
+	text-align: justify;
+	margin-bottom: 10px;
+}
 
+#newsDetails img {
+	float: left;
+	width: 250px;
+	margin-right:20px;
+	margin-bottom: 10px;
+	border: 1px solid #7C868B;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ie7 #newsDetails img, .ie8 #newsDetails img {
+	border-radius: 5px;
+	behavior: url('jelix/js/PIE.htc');
+}
 
 /**********************************************/
 /*				About page					  */

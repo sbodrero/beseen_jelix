@@ -22,7 +22,7 @@
 				<a href="{jUrl 'news~deleteNews',array('id'=>$news->id)}" alt="Supprimer la news">Supprimer</a>
 				{/if}
 				{if (isset($news->textShort))}	
-				<a href="{jUrl 'news~showNews',array('id' => $news->id)}"><img src="{$j_themepath}Images/bottomNewsRibbon.png" alt="Voir le détail de la news"></a>
+				<a href="{jUrl 'news~prepareComsForm',array('id' => $news->id)}"><img src="{$j_themepath}Images/bottomNewsRibbon.png" alt="Voir le détail de la news"></a>
 				{/if}
 			</div>
 		</div>

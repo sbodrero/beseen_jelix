@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+
+
+<input ref="id" type="integer">
+	<label>Id</label>
+</input>
+
+<input ref="pseudo" type="string" required="true" maxlength="100">
+    <label locale="string.coms.pseudo.label"/>
+    <hint locale="string.coms.pseudo.help"/>
+</input>
+
+<input ref="url" type="url">
+    <label locale="string.coms.url.label"/>
+    <hint locale="string.coms.url.help"/>
+</input>
+
+<input ref="mail" type="email" required="true" >
+    <label locale="string.coms.email.label"/>
+    <hint locale="string.coms.email.help"/>
+</input>
+
+<textarea ref="text" required="true">
+	<label locale="string.coms.text.label"/>
+    <hint locale="string.coms.text.help"/>
+</textarea>
+
+<input ref="date" type="datetime">
+	<label>Date</label>
+</input>
+
+<hidden ref="news_id">
+	<label>News Id</label>
+</hidden>
+
+<submit ref="_submit">
+	<label>Envoyer</label>
+</submit>
+</form>

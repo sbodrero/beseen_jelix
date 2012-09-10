@@ -48,17 +48,42 @@ class defaultCtrl extends jController {
         return $rep;
     }
 
+    function prepareComsForm() {
+        $newsId = $this->param('id');
+        jForms::clean('comsform');
+        $form = jForms::create('comsform');
+        $form = jForms::clear('comsform');
+
+        $form->setData('news_id', $newsId);
+        jLog::dump($form->getAllData());
+
+        jMessage::clear('msgNoticeContact');
+
+        $rep= $this->getResponse('redirect');
+        $rep->params = array('id' => $newsId );
+        $rep->action='default:showNews';
+        return $rep;
+    }
+
     function showNews() {
 
-        $newsId = $this->param('id');            
+        $newsId = $this->param('id');
+        $newsDetails = '';
+        $comsList = '';
+        $comsCount = '';            
 
         if(!empty($newsId)) {
             $newsDao = jDao::get('newsdao');
-            $newsDetails = $newsDao->findNewsDetails($newsId  );
+            $comsDao = jDao::get('comsdao');
+            $newsDetails = $newsDao->findNewsDetails($newsId);
+            $comsList = $comsDao->findComsByNews($newsId);
+            $comsCount = count($comsList);
         }
 
         $tpl = new jTpl();
-        $tpl->assign('newsDetails',$newsDetails);
+        $tpl->assign(array('newsDetails' => $newsDetails,
+                            'comsList' => $comsList,
+                            'comsCount' => $comsCount));
 
         $frontImage = 'news';
 
@@ -66,6 +91,39 @@ class defaultCtrl extends jController {
         $rep->body->assign('frontImage', $frontImage);
         $rep->body->assign( 'MAIN', $tpl->fetch('newsDetails') );
         return $rep;
+    }
+
+    function saveComs() {
+
+        $form = jForms::fill('comsform');
+        $data = $form->getAllData();
+
+        if (!$form->check()) {
+            $rep = $this->getResponse('redirect');
+            $rep->params = array('id' => $data['news_id']);
+            $rep->action='news~default:showNews';
+            jLog::dump($rep);
+            return $rep;
+        }
+        if ($form->check()) {
+            $data = $form->getAllData();
+            $comsDao = jDao::get('comsdao');
+            $record = jDao::createRecord('comsdao');
+            $record->pseudo = $data['pseudo'];
+            $record->url = $data['url'];
+            $record->mail = $data['mail'];
+            $record->text = $data['text'];
+            $record->news_id = $data['news_id'];
+            $comsDao->insert($record);
+
+            jForms::destroy('comsform');
+            jMessage::add( jLocale::get('string.news.comsOk'), 'msgNoticeContact' );
+            $rep = $this->getResponse('redirect');
+            $rep->params = array('id' => $data['news_id']);
+            $rep->action='default:showNews';
+
+            return $rep;
+        }
     }
 
     function showNewsByTheme() {
@@ -112,7 +170,7 @@ class defaultCtrl extends jController {
         if (!$form->check()) {
             $rep = $this->getResponse('redirect');
             $rep->action='news~default:showNewsForm';
-        return $rep;
+            return $rep;
         }
         if ($form->check()) {
 
@@ -153,7 +211,7 @@ class defaultCtrl extends jController {
                 }                
             }
 
-            $data = $form->getAllData() ;
+            $data = $form->getAllData();
             $newsDao = jDao::get('newsdao');
             $record = jDao::createRecord('newsdao');
             $record->title = $data['title'];
