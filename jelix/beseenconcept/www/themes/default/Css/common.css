@@ -447,6 +447,11 @@ div.noticeBox span {
 /**********************************************/
 /*				News details				  */
 /**********************************************/
+
+#newsDetails {
+	margin:	70px auto;
+}
+
 #newsDetails h1 {
 	color: #472626;	
 	font-size: 30px;
@@ -457,6 +462,8 @@ div.noticeBox span {
 #newsDetails p {
 	text-align: justify;
 	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 #newsDetails img {
@@ -482,4 +489,21 @@ div.noticeBox span {
 
 #virtualCard {
 	clear: both;
+}
+
+/**********************************************/
+/*				Commentaires news   		  */
+/**********************************************/
+
+.comsBody {
+	padding-left: 50px;
+	margin-bottom: 30px;
+	min-height: 60px;
+	background-image: url('../Images/comsQuote.png');
+	background-repeat: no-repeat;
+}
+
+.comsBody hr {
+	margin: 0px;
+	margin-top: 5px;
 }

@@ -9,7 +9,7 @@ jQuery(function (){
 {/literal}
 //]]</script>
 
-<h2>Commentaires</h2>
+<h2>Commentaires()</h2>
 <hr>
 <div id="form">
 	{form $form, 'news~default:saveComs'}

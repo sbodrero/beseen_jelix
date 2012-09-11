@@ -16,6 +16,7 @@ class defaultCtrl extends jController {
         '*'=>array('auth.required'=>false),
         'deleteNews'=>array('auth.required'=>true),
         'editNews'=>array('auth.required'=>true),
+        'waitingComs'=>array('auth.required'=>true)
      );
 
     protected $isConnected = false;
@@ -102,7 +103,6 @@ class defaultCtrl extends jController {
             $rep = $this->getResponse('redirect');
             $rep->params = array('id' => $data['news_id']);
             $rep->action='news~default:showNews';
-            jLog::dump($rep);
             return $rep;
         }
         if ($form->check()) {
@@ -126,6 +126,19 @@ class defaultCtrl extends jController {
         }
     }
 
+    function waitingComs() {
+
+        $comsDao = jDao::get('comsdao');
+        $waitingComs = $comsDao->findWaitingComs();
+
+        $tpl = new jTpl();
+        $tpl->assign('waitingComs', $waitingComs);
+        $mainContent = $tpl->fetch('waitingComs');
+        $rep = $this->getResponse('htmlfragment');
+        $rep->addContent($mainContent);
+        return $rep;
+    }
+
     function showNewsByTheme() {
 
     }
@@ -139,7 +152,7 @@ class defaultCtrl extends jController {
         jMessage::clear('msgNoticeContact');
 
         $rep= $this->getResponse('redirect');
-        $rep->action='default:showNewsForm';
+        $rep->action ='default:showNewsForm';
         return $rep;
     }
 

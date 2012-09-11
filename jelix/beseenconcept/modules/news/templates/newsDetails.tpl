@@ -13,8 +13,16 @@
 		<div id="comsForm" class="dotBkg">
 			{zone 'news~comsForm'}
 		</div>
+		{if isset($comsCount) && $comsCount > 0 }
 		<div id="newsCom" class="dotBkg">
-			
-		</div>			
+			{foreach $comsList as $coms}
+				<div class="comsBody">
+					{$coms->pseudo}&nbsp;le&nbsp;{$coms->date}
+					<hr>
+					<p>{$coms->text}</p>
+				</div>
+			{/foreach}
+		</div>
+		{/if}			
 	{/if}
 </div>

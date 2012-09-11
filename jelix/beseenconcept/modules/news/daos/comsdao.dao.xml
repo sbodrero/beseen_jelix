@@ -2,6 +2,7 @@
 <dao xmlns="http://jelix.org/ns/dao/1.0">
     <datasources>
         <primarytable name="coms" realname="coms" primarykey="id" />
+        <foreigntable name="news" realname="news" primarykey="id" onforeignkey="news_id" />
     </datasources>
     <record>
         <property name="id" fieldname="id" datatype="int" autoincrement="true"/>
@@ -11,6 +12,8 @@
         <property name="text" fieldname="text" datatype="text" required="true"/>
         <property name="date" fieldname="date" datatype="datetime" insertpattern="Now()" required="true"/>
         <property name="news_id" fieldname="news_id" datatype="int" required="true"/>
+        <property name="online" fieldname="online" datatype="int" default="0" required="true"/>
+        <property name="title" fieldname="title" datatype="string" table="news" />
         <!--<property name="" fieldname="" datatype="string/int/float/date"
         required="yes" maxlength="" minlength="" regexp="" sequence=""
         updatepattern="" insertpattern="" selectpattern=""/>-->
@@ -18,12 +21,27 @@
     <factory>
         <method name="findComsByNews" type="select">
             <parameter name="news_id" />
-            <conditions logic="and/or">
-                <eq property="news_id" value="$news_id" />
+            <conditions logic="and">
+                <eq property="news_id" expr="$news_id" />
+                <eq property="online" expr="1" />
             </conditions>
             <order>
                 <orderitem property="date" way="desc" />
             </order>
-        </method>-->
+        </method>
+        <method name="findWaitingComs" type="select">
+            <condition>
+                <eq property="online" expr="0" />
+            </condition>
+        </method>
+        <method name="validateComs" type="update">
+            <parameter name="id"/>
+            <conditions>
+                <eq property="online" expr="$id" />
+            </conditions>
+            <values>
+                <value property="online" value="1"/>
+            </values>
+        </method>
     </factory>
 </dao>
