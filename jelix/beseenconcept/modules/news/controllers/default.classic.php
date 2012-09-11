@@ -139,6 +139,10 @@ class defaultCtrl extends jController {
         return $rep;
     }
 
+    function deleteOrValidateWaitingComs() {
+        
+    }
+
     function showNewsByTheme() {
 
     }

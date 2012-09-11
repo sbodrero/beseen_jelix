@@ -8,7 +8,8 @@
 		{/foreach}
 		{if $isConnected}
 			<li><a href="{jurl 'news~prepareNewsForm'}">Ajouter une news</a></li>
-			<li><a href="{jurl 'news~waitingComs'}">Commentaires en attente</a></li>
+			<li><a id="validateComs" href="{jurl 'news~waitingComs'}">Commentaires en attente</a></li>
 		{/if}
 	</ul>
 </div>
+

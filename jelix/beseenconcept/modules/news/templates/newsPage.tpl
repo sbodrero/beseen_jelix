@@ -32,4 +32,23 @@
 	{zone 'news~themes'}
 </div>
 </div>
+<script type="text/javascript">
+{literal}
+
+	$('#validateComs').bind('click', function(){
+		refUrl = $(this).attr('href');
+		$('#newsWrapper').append('<div id="showWaitingComsBox" class="dotBkg"><div id="ajaxLoader"></div></div>');
+		//var waitingComsBoxTop = $(this).waitingComsBoxPosition();
+		$('div#showWaitingComsBox').css({'top':'-20px','left':'25%'});
+		$.get(refUrl, function(data) {
+			$('div#showWaitingComsBox').find('div#ajaxLoader').remove();
+			$('div#showWaitingComsBox').empty().append('<a class="closeCross"><span>X</span></a>');
+            $('div#showWaitingComsBox').append(data).find('a.closeCross').bind("click", function(){
+                $('div#showWaitingComsBox').remove();
+            });
+		})
+		return false;
+	});
+{/literal}
+</script>
 

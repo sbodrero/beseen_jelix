@@ -67,6 +67,10 @@ iframe {
 	height: 180px;
 }
 
+.centerMe {
+	text-align: center;
+}
+
 .indent { text-indent: -9999px;}
 
 .textShadow {
@@ -94,6 +98,28 @@ iframe {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     padding: 30px 20px 20px 20px;
+}
+
+.buttonLike {
+    -moz-box-shadow: inset 0 0 5px #888;
+    -webkit-box-shadow: inset 0 0 5px #888;
+    -o-box-shadow: inset 0 0 5px #888;
+    -ms-box-shadow: inset 0 0 5px #888;
+    box-shadow: inset 0 0 5px #888;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.ie7 .buttonLike, .ie8 .buttonLike {
+	background: url('../Images/background.png') center top repeat;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px rgba(128,128,128,0.5);
+	behavior: url('jelix/js/PIE.htc');
+	padding: 10px;
 }
 
 .ie7 .dotBkg, .ie8 .dotBkg {
@@ -280,7 +306,7 @@ iframe {
 	left: 130px;
 }
 
-div.noticeBox a.closeCross, a.modalCloseImg  {
+div.noticeBox a.closeCross, a.modalCloseImg, a.closeCross {
     float: right;
     margin: 2px 0 0 10px;
     background: url('../Images/btn-close.png') no-repeat;
@@ -289,8 +315,9 @@ div.noticeBox a.closeCross, a.modalCloseImg  {
     width: 16px;
 }
 
-div.noticeBox a.closeCross:hover, a.modalCloseImg :hover {
+div.noticeBox a.closeCross:hover, a.modalCloseImg :hover, a.closeCross:hover {
     background-position: -16px 0;
+    cursor: pointer;
 }
 
 div.noticeBox span {
@@ -506,4 +533,43 @@ div.noticeBox span {
 .comsBody hr {
 	margin: 0px;
 	margin-top: 5px;
+}
+
+.ajaxLoader {
+    background:url('../Images/ajax-loader.gif') no-repeat;
+    height:55px;
+    width:54px;
+    display:block;
+    margin:40px
+}
+
+#showWaitingComsBox {
+    position: absolute;
+    height: 460px;
+    width: 415px;
+    background: url('../Images/background.png');
+    z-index: 100;
+    overflow: auto;
+    cursor: pointer;
+}
+
+a.closeCross span {
+	color: transparent;
+}
+
+.comsToValidate {
+	position: relative;
+	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.comsActions {
+	position: absolute;
+	right: 30px;
+	bottom: 10px;
+}
+
+.comsActions input[type=radio] {
+	display: inline-block;
 }
