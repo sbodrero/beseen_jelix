@@ -30,3 +30,13 @@
 <div id="rightSide">
 {zone 'structure~contact'}
 </div>
+<script type="text/javascript">
+{literal}
+	$('#jforms_structure_contact_name').attr('placeholder','Votre nom');
+	$('#jforms_structure_contact_email').attr('placeholder','Votre adresse mail');
+	$('#jforms_structure_contact_message').attr('placeholder','Votre message');
+	$('#jforms_structure_contact_name, #jforms_structure_contact_email, #jforms_structure_contact_message').bind('click focus', function() {
+		$(this).attr('placeholder','');
+	});
+{/literal}
+</script>

@@ -19,9 +19,9 @@ class defaultCtrl extends jController {
         $form = jForms::create('contact');
         $form = jForms::clear('contact');
 
-        $form->setData( 'name', jLocale::get('string.contact.name.preselected') );
+        /*$form->setData( 'name', jLocale::get('string.contact.name.preselected') );
         $form->setData( 'email', jLocale::get('string.contact.email.preselected') );
-        $form->setData( 'message', jLocale::get('string.contact.message.preselected') );
+        $form->setData( 'message', jLocale::get('string.contact.message.preselected') );*/
 
         jMessage::clear('msgNoticeContact');
 
