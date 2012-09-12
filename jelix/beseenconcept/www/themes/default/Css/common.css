@@ -65,6 +65,7 @@ blockquote p {
 iframe {
 	width: 400px;
 	height: 180px;
+	overflow: hidden;
 }
 
 .centerMe {

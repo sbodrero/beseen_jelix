@@ -19,11 +19,11 @@
 			{if isset($news->image) && $news->image != ''}
 			<img class="mainPicture" src="{$j_themepath}Images/news/thumbs/{$news->image}" alt="{$news->imageName}">
 			{/if}
-			<p>{$news->text}{if isset($news->textShort)}...{/if}</p>
+			{$news->text}{if isset($news->textShort)}...{/if}
 			<div class="toolsBar">
 				{if ($isConnected)}
-				<a href="{jUrl 'news~editNews',array('id'=>$news->id)}" alt="Editer la news">Editer</a>
-				<a href="{jUrl 'news~deleteNews',array('id'=>$news->id)}" alt="Supprimer la news">Supprimer</a>
+				<a href="{jUrl 'news~editNews',array('id'=>$news->id)}" title="Editer la news">Editer</a>
+				<a href="{jUrl 'news~deleteNews',array('id'=>$news->id)}" title="Supprimer la news">Supprimer</a>
 				{/if}
 				{if (isset($news->textShort))}	
 				<a href="{jUrl 'news~prepareComsForm',array('id' => $news->id)}"><img src="{$j_themepath}Images/bottomNewsRibbon.png" alt="Voir le détail de la news"></a>

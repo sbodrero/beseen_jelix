@@ -22,14 +22,14 @@
 	 
 	<h3>Photographies</h3>
 	<ul>
-		<li>Background pattern 'Furley' &copy;<a href="http://www.subtlepatterns.com" target="_blanck" title="Url subtlepatterns">www.subtlepatterns.com</a></li>
+		<li>Background pattern 'Furley' &copy;<a href="http://www.subtlepatterns.com" target="_blank" title="Url subtlepatterns">www.subtlepatterns.com</a></li>
 	</ul>
 
 	<h3>Infographies</h3>
 	<ul>
-		<li>Speech Bubble Icon &copy;<a href="http://graphicsfuel.com" target="_blanck" title="Url graphicsfuel">graphicsfuel.com</a></li>
-		<li>Satisfaction_Guaranteed_Badges &copy;<a href="http://freepsdfiles.net" target="_blanck" title="Url freepsdfiles">freepsdfiles.net</a></li>
-		<li>Vintage Web Badge &copy;<a href="http://psdblast.com" target="_blanck" title="Url psdblast">psdblast.com</a></li>
+		<li>Speech Bubble Icon &copy;<a href="http://graphicsfuel.com" target="_blank" title="Url graphicsfuel">graphicsfuel.com</a></li>
+		<li>Satisfaction_Guaranteed_Badges &copy;<a href="http://freepsdfiles.net" target="_blank" title="Url freepsdfiles">freepsdfiles.net</a></li>
+		<li>Vintage Web Badge &copy;<a href="http://psdblast.com" target="_blank" title="Url psdblast">psdblast.com</a></li>
 	</ul>
 </div>
 <div id="me" class="dotBkg bottom">
@@ -62,13 +62,13 @@
 	<div class="floatLeft">
 	<h3>Formateur</h3>
 	<ul>
-		<li><a href="https://www.mcpvirtualbusinesscard.com/VBCServer/beseenconcept.fr/GetTranscript.aspx?id=c43d8cd5-101a-4181-a8f4-77c107eced4f" alt="Lien transcript" data-attr="{jUrl 'structure~udpatePdfCount', array('name' => 'Transcript')}"><img class="alignMiddleAndMargin" src="{$j_themepath}Images/pdf.png" alt="Logo pdf">MCP Transcript</a></li>
+		<li><a href="https://www.mcpvirtualbusinesscard.com/VBCServer/beseenconcept.fr/GetTranscript.aspx?id=c43d8cd5-101a-4181-a8f4-77c107eced4f" title="Lien transcript" data-attr="{jUrl 'structure~udpatePdfCount', array('name' => 'Transcript')}"><img class="alignMiddleAndMargin" src="{$j_themepath}Images/pdf.png" alt="Logo pdf">MCP Transcript</a></li>
 	</ul>		
 	</div>
 	<div id="virtualCard">
 	<h3>Carte virtuelle</h3>
 	<ul>
-		<li><iframe frameborder="0" scrolling="no" width="392px" height="177px" src="https://www.mcpvirtualbusinesscard.com/VBCServer/beseenconcept.fr/interactivecard"></iframe></li>
+		<li><iframe src="https://www.mcpvirtualbusinesscard.com/VBCServer/beseenconcept.fr/interactivecard"></iframe></li>
 	</ul>		
 	</div>
 </div>

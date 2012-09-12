@@ -20,13 +20,13 @@
 	{$MAIN}
 </div>
 <div id="footer">
-	<a href="http://www.viadeo.com/profile/002hv75fne0n73r?ga_from=Fu:/tableaudebord/accueil/;Fb%3AN-topmenu%3BFe%3AL1%3B" title="Viadeo" target="_blanck">
+	<a href="http://www.viadeo.com/profile/002hv75fne0n73r?ga_from=Fu:/tableaudebord/accueil/;Fb%3AN-topmenu%3BFe%3AL1%3B" title="Viadeo" target="_blank">
 		<img src="{$j_themepath}Images/vimeo.png" alt="Logo Viadeo">
 	</a>
-	<a href="http://www.facebook.com/sebastien.bodrero" title="Facebook" target="_blanck">
+	<a href="http://www.facebook.com/sebastien.bodrero" title="Facebook" target="_blank">
 		<img src="{$j_themepath}Images/facebook.png" alt="Logo Facebook">
 	</a>
-	<a href="http://beknown.com/sebastien-bodrero" title="Beknown" target="_blanck">
+	<a href="http://beknown.com/sebastien-bodrero" title="Beknown" target="_blank">
 		<img src="{$j_themepath}Images/beknown.png" alt="Logo BeKnown">
 	</a>
 	<a class="twitter-timeline"  href="https://twitter.com/sbodrero" data-widget-id="243695131553841154" title="Twitter">
@@ -34,7 +34,7 @@
 	</a>
 	<a href="mailto:sebdebillere@hotmail.fr" title="email"><img src="{$j_themepath}Images/email-front.png" alt="Logo Email">
 	</a>
-	<a a href="{jurl 'jauth~login:form'}" title="Login">
+	<a href="{jurl 'jauth~login:form'}" title="Login">
 		<img src="{$j_themepath}Images/user.png" alt="Authentification">
 	</a>
 </div>
