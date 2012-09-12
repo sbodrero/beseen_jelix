@@ -11,6 +11,8 @@
 			</div>
 		{/foreach}
 		<div id="comsForm" class="dotBkg">
+			<h2>Commentaires({$comsCount})</h2>
+			<hr>
 			{zone 'news~comsForm'}
 		</div>
 		{if isset($comsCount) && $comsCount > 0 }

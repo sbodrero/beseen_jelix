@@ -43,5 +43,12 @@
                 <value property="online" value="1"/>
             </values>
         </method>
+        <method name="countComsBynews" type="count">
+            <parameter name="news_id" />
+            <conditions>
+                <eq property="news_id" expr="$news_id" />
+                <eq property="online" value="1" />
+            </conditions>
+        </method>
     </factory>
 </dao>

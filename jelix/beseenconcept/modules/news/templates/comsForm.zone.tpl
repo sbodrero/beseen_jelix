@@ -9,8 +9,6 @@ jQuery(function (){
 {/literal}
 //]]</script>
 
-<h2>Commentaires()</h2>
-<hr>
 <div id="form">
 	{form $form, 'news~default:saveComs'}
 		{formcontrols array('pseudo','url','mail','text','news_id')}

@@ -10,11 +10,15 @@
 			<img class="newsRibbon" src="{$j_themepath}Images/newsRibbon.png" alt="Ruban news">
 			<h2>{$news->title}</h2>
 			Par Sébastien&nbsp;le&nbsp;{$news->date}&nbsp;dans&nbsp;<a href="">{$news->theme_name}</a>
+			{if isset($news->comsCount) && $news->comsCount > 0}
 			<a href="{jUrl 'news~prepareComsForm',array('id'=>$news->id)}" title="Voir les commentaires">
-				<img class="smallImage" src="{$j_themepath}Images/bulle.png" alt="">&nbsp;commentaires
+				<img class="smallImage" src="{$j_themepath}Images/bulle.png" alt="Bulle commentaires">{$news->comsCount}&nbsp;commentaires
 			</a>
+			{/if}
 			<hr>
+			{if isset($news->image) && $news->image != ''}
 			<img class="mainPicture" src="{$j_themepath}Images/news/thumbs/{$news->image}" alt="{$news->imageName}">
+			{/if}
 			<p>{$news->text}{if isset($news->textShort)}...{/if}</p>
 			<div class="toolsBar">
 				{if ($isConnected)}

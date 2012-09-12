@@ -26,11 +26,15 @@ class tools {
 
 	// Prepare the data to send to the news tpl
 	public function prepareArrayForNewslist($list) {
+
+		$comsDao = jDao::get('comsdao');
+
         foreach ($list as $news) {
         	if(strlen($news->text) > 200) {
             	$news->text = substr($news->text,0,200); 
             	$news->textShort = true;            	
         	}
+        	$news->comsCount = $comsDao->countComsBynews($news->id);
         	$news->imageName = $this->ImageNameWithoutExt($news->image);
 			$preparedList[] = $news;
         }

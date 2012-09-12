@@ -32,8 +32,7 @@ class defaultCtrl extends jController {
     	$list = $newsDao->findAllAndOrder();
 
         $toolsSrv = jClasses::getService( 'tools' );
-        $newsList = $toolsSrv->prepareArrayForNewslist($list);
-        
+        $newsList = $toolsSrv->prepareArrayForNewslist($list);        
 
     	$tpl = new jTpl();
     	$tpl->assign('newsList',$newsList);
@@ -78,7 +77,9 @@ class defaultCtrl extends jController {
             $comsDao = jDao::get('comsdao');
             $newsDetails = $newsDao->findNewsDetails($newsId);
             $comsList = $comsDao->findComsByNews($newsId);
-            $comsCount = count($comsList);
+
+            $comDao = jDao::get('comsdao');
+            $comsCount = $comDao->countComsBynews($newsId);
         }
 
         $tpl = new jTpl();
@@ -143,8 +144,7 @@ class defaultCtrl extends jController {
 
         $comsDao = jDao::get('comsdao');
         $toolsSrv = jClasses::getService( 'tools' );
-        jLog::dump($_POST);
-        jLog::dump(count($_POST));
+
         $deletedComs = 0;
         $validatedComs = 0;
         foreach ($_POST as $key => $value) {
@@ -222,12 +222,12 @@ class defaultCtrl extends jController {
             return $rep;
         }
         if ($form->check()) {
-
+            jLog::dump($_FILES['image']);
             global $gJConfig;
             $uploadDirThumbs = JELIX_APP_WWW_PATH.$gJConfig->urlengine['basePath'].'themes/'.jApp::config()->theme.'/Images/news/thumbs/';
             $uploadDirRealSize = JELIX_APP_WWW_PATH.$gJConfig->urlengine['basePath'].'themes/'.jApp::config()->theme.'/Images/news/';
 
-            if(!empty($_FILES['image'])) {
+            if($_FILES['image']['size'] > 0) {
 
                 $imageNewsInfos = getimagesize($_FILES['image']['tmp_name']);
                 $newImageWidth = 100;
