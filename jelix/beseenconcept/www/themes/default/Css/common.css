@@ -510,6 +510,10 @@ div.noticeBox span {
 	behavior: url('jelix/js/PIE.htc');
 }
 
+#newsBody {
+	min-height: 180px;
+}
+
 /**********************************************/
 /*				About page					  */
 /**********************************************/
