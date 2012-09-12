@@ -1,6 +1,5 @@
-{meta_html description "beseenconcept.fr : Développeur web et applicatif sur Pau, Pyrénées-Atlantiques"}
 {meta_html keywords "beseenconcept.fr, sites web, site internet, applications web, développeur, open source, jelix, html5, css3, jquery, dolibarr, pau"}
-{meta_html autor "Sébastien Bodrero"}
+{meta_html author "Sébastien Bodrero"}
 <div id="wrapper">
 	<div id="header">
 		<div id="mainTitle" class="textShadow"><a href="{jUrl 'structure~index'}">be seen concept</a></div>

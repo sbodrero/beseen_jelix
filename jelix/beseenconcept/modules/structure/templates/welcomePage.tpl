@@ -1,3 +1,4 @@
+{meta_html description "beseenconcept.fr : Développeur web et applicatif sur Pau, Pyrénées-Atlantiques"}
 <h1 class="indent">About</h1>
 <blockquote>
 	<p>{@string.accroche@}</p>	
