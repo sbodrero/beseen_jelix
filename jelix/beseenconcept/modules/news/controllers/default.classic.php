@@ -7,6 +7,7 @@
 * @link      http://www.yourwebsite.undefined
 * @license    All rights reserved
 */
+jClasses::inc( 'news~defines' );
 
 class defaultCtrl extends jController {
     /**
@@ -56,7 +57,6 @@ class defaultCtrl extends jController {
         $form = jForms::clear('comsform');
 
         $form->setData('news_id', $newsId);
-        jLog::dump($form->getAllData());
 
         jMessage::clear('msgNoticeContact');
 
@@ -120,7 +120,7 @@ class defaultCtrl extends jController {
             jMessage::add( jLocale::get('string.news.comsOk'), 'msgNoticeContact' );
             $rep = $this->getResponse('redirect');
             $rep->params = array('id' => $data['news_id']);
-            $rep->action='default:showNews';
+            $rep->action ='default:showNews';
 
             return $rep;
         }
@@ -140,7 +140,39 @@ class defaultCtrl extends jController {
     }
 
     function deleteOrValidateWaitingComs() {
-        
+
+        $comsDao = jDao::get('comsdao');
+        $toolsSrv = jClasses::getService( 'tools' );
+        jLog::dump($_POST);
+        jLog::dump(count($_POST));
+        $deletedComs = 0;
+        $validatedComs = 0;
+        foreach ($_POST as $key => $value) {
+            switch ($value) {
+                case ACTION_VALIDATE:
+                    $idToValidate = $toolsSrv->extractComsId($key);
+                    jLog::dump($idToValidate);
+                    $comsDao->validateComs($idToValidate);
+                    $validatedComs +=1;
+                    break;
+                case ACTION_DELETE:
+                    $idToDelete = $toolsSrv->extractComsId($key);
+                    $comsDao->delete($idToDelete);
+                    $deletedComs +=1;
+                    break;
+            }
+        }
+
+        if( $deletedComs > 0 || $validatedComs > 0) {
+            jMessage::add( $deletedComs.' supprimé(s) '.$validatedComs.' validé(s)', 'msgNoticeContact' );
+        } else {
+            jMessage::add( jLocale::get('string.news.comsProblem'), 'msgErrorContact' );
+        }
+
+        $rep = $this->getResponse('redirect');
+        $rep->action = 'default:index';
+        return $rep;
+
     }
 
     function showNewsByTheme() {

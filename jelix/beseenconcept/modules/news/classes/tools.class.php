@@ -37,5 +37,12 @@ class tools {
     	return $preparedList;
 	}
 
+	// Get the coms id
+	public function extractComsId($formId) {
+		$formId = explode('_',$formId);
+		$id = $formId[count($formId)-1];
+		return $id;
+	}
+
 }
  ?>

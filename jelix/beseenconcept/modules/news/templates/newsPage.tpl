@@ -10,7 +10,7 @@
 			<img class="newsRibbon" src="{$j_themepath}Images/newsRibbon.png" alt="Ruban news">
 			<h2>{$news->title}</h2>
 			Par Sébastien&nbsp;le&nbsp;{$news->date}&nbsp;dans&nbsp;<a href="">{$news->theme_name}</a>
-			<a href="{jUrl 'news~showNews',array('id'=>$news->id)}" title="Voir les commentaires">
+			<a href="{jUrl 'news~prepareComsForm',array('id'=>$news->id)}" title="Voir les commentaires">
 				<img class="smallImage" src="{$j_themepath}Images/bulle.png" alt="">&nbsp;commentaires
 			</a>
 			<hr>
@@ -38,7 +38,6 @@
 	$('#validateComs').bind('click', function(){
 		refUrl = $(this).attr('href');
 		$('#newsWrapper').append('<div id="showWaitingComsBox" class="dotBkg"><div id="ajaxLoader"></div></div>');
-		//var waitingComsBoxTop = $(this).waitingComsBoxPosition();
 		$('div#showWaitingComsBox').css({'top':'-20px','left':'25%'});
 		$.get(refUrl, function(data) {
 			$('div#showWaitingComsBox').find('div#ajaxLoader').remove();

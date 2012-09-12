@@ -23,21 +23,21 @@
             <parameter name="news_id" />
             <conditions logic="and">
                 <eq property="news_id" expr="$news_id" />
-                <eq property="online" expr="1" />
+                <eq property="online" value="1" />
             </conditions>
             <order>
                 <orderitem property="date" way="desc" />
             </order>
         </method>
         <method name="findWaitingComs" type="select">
-            <condition>
-                <eq property="online" expr="0" />
-            </condition>
+            <conditions>
+                <eq property="online" value="0"/>
+            </conditions>
         </method>
         <method name="validateComs" type="update">
             <parameter name="id"/>
             <conditions>
-                <eq property="online" expr="$id" />
+                <eq property="id" expr="$id" />
             </conditions>
             <values>
                 <value property="online" value="1"/>

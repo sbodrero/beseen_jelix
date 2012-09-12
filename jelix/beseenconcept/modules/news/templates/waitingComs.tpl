@@ -7,9 +7,9 @@
 		<p>Commentaire de&nbsp;{$coms->pseudo}&nbsp;dans&nbsp;{$coms->title}</p>
 		<p>{$coms->text}</p>
 		<div class="comsActions">
-			<input type="radio" name="coms_{$coms->id}" value="validate" id="delete_{$coms->id}">
+			<input type="radio" name="coms_{$coms->id}" value="valider" id="delete_{$coms->id}">
 			<label for="delete_{$coms->id}">Valider</label>
-			<input type="radio" name="coms_{$coms->id}" value="delete" id="delete_{$coms->id}">
+			<input type="radio" name="coms_{$coms->id}" value="supprimer" id="delete_{$coms->id}">
 			<label for="delete_{$coms->id}">Supprimer</label>
 		</div>
 	</div>
