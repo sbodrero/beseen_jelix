@@ -6,11 +6,11 @@
 
 	<h2>Mentions légales<img src="{$j_themepath}Images/tip.png" alt="Bulle message"></h2>
 	<hr>
-	<p>Vous êtes sur le site <b>beseenconcept.fr</b><br>Nom de domaine possèdé et représenté par Sébastien Bodrero.</p>
+	<p>Vous êtes sur le site <b>beseenconcept.fr</b><br>Nom de domaine possédé et représenté par Sébastien Bodrero.</p>
 	<p>Ce site et l'ensemble des informations présentées sont soumis à la règlementation française en vigueur.</p>
-	<p>Contenu du site non contractuel suceptible d'être enrichi, modifié et supprimé.</p>
-	<p>J'exécute mes missions en freelance en tant que salarié portée (contrat tripartite), en cdd ou cdi au sein de votre structure et/ou en télétravail.</p>
-	<p>N'hesitez pas à me poser des questions à ce sujet</p>
+	<p>Contenu du site non contractuel susceptible d'être enrichi, modifié et supprimé.</p>
+	<p>J'exécute mes missions en freelance en tant que salarié porté (contrat tripartite), en CDD ou CDI au sein de votre structure et/ou en télétravail.</p>
+	<p>N'hésitez pas à me poser des questions à ce sujet</p>
 </div>
 <div class="dotBkg bottom">
 	<h2>Crédits<img src="{$j_themepath}Images/tip.png" alt="Bulle message"></h2>
@@ -33,7 +33,7 @@
 	</ul>
 </div>
 <div id="me" class="dotBkg bottom">
-	<h2>A propos du concepteur<img src="{$j_themepath}Images/tip.png" alt="Bulle message"></h2>
+	<h2>À propos du concepteu<img src="{$j_themepath}Images/tip.png" alt="Bulle message"></h2>
 	<hr>
 	<div class="floatLeft">
 	<h3>Développeur web</h3>
@@ -48,7 +48,7 @@
 	</ul>		
 	</div>
 	<div class="floatLeft">
-	<h3>Administrateur system Windows</h3>
+	<h3>Administrateur système Windows</h3>
 	<ul>
 		<li><img src="{$j_themepath}Images/MCSA.png" alt="Certification Microsoft Administrateur"></li>	
 	</ul>		

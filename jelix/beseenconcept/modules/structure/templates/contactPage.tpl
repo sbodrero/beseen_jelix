@@ -5,13 +5,13 @@
 <div id="formZone" class="dotBkg">
 	<h2><img class="contactImg" src="{$j_themepath}Images/formulaire.png" alt="Bulle message">Formulaire</h2>
 	<hr>
-	<p>Remplissez ce questionnaire et je vous contacterais dans les plus brefs délais.</p>
+	<p>Remplissez ce questionnaire et je vous contacterai dans les plus brefs délais.</p>
 	{zone 'structure~contactUs'}
 </div>
 <div id="mailZone" class="dotBkg">
 	<h2><img class="contactImg" src="{$j_themepath}Images/email.png" alt="Bulle message">Mail</h2>
 	<hr>
-	<p>Envoyer moi directement un mail.</p>
+	<p>Envoyez-moi directement un mail.</p>
 	<ul>
 		<li><a href="mailto:contact@beseenconcept.fr">contact@beseenconcept.fr</a></li>
 		<li><a href="mailto:sbodereo@beseenconcept.fr">sbodrero@beseenconcept.fr</a></li>

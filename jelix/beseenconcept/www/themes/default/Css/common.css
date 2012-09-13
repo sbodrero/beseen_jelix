@@ -45,7 +45,7 @@ hr {
 }
 
 blockquote {
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 60px;
 	padding: 0px 122px 0px 122px;
 	background-image: url('../Images/quote.png');
@@ -220,7 +220,7 @@ iframe {
 #picture {
 	text-align: center;
 	padding-top: 52px;
-	height: 250px;
+	height: 240px;
 }
 
 /**********************************************/
@@ -360,7 +360,7 @@ div.noticeBox span {
 
 .news {
 	position: relative;
-	height: 200px;
+	min-height: 200px;
 	width: 510px;
 	margin-bottom: 30px;
 	border-bottom: 25px solid #161616;
@@ -399,7 +399,8 @@ div.noticeBox span {
 }
 
 .news p {
-	text-align: justify;	
+	text-align: justify;
+	padding-bottom: 10px;	
 }
 
 .mainPicture {
@@ -543,7 +544,10 @@ div.noticeBox span {
 	margin-top: 5px;
 }
 
-.ajaxLoader {
+#ajaxLoader {
+    position: absolute;
+    top: 33%;
+    left: 33%;
     background:url('../Images/ajax-loader.gif') no-repeat;
     height:55px;
     width:54px;
@@ -581,3 +585,79 @@ a.closeCross span {
 .comsActions input[type=radio] {
 	display: inline-block;
 }
+
+/**********************************************/
+/*				Responsive design   		  */
+/**********************************************/
+
+@media screen and (max-width: 320px) {
+
+  h2 {
+  	font-size: 22px;
+  }
+
+  #wrapper {
+  	width: 300px;
+  }
+  
+  #mainTitle a {
+    font-size: 40px;
+  }
+
+  #header img {
+  	width: 90px;
+  	left: 180px;
+  }
+
+  #picture {
+  	padding-left: 10px;
+  	padding-top: 140px;
+  	height: 100px;
+  }
+
+  #picture img {
+  	height: 80px;
+  }
+
+  #nav ul {
+  	position: relative;
+  }
+
+  #nav a {
+  	font-size: 14px;
+  	padding: 5px 10px;
+  }
+
+  blockquote {
+  	width: 280px;
+  	padding: 10px;
+  	margin-top: 20px;
+  	margin-bottom: 20px;
+  	background-image: none;
+  }
+
+  blockquote p {
+  	font-size: 12px;
+  }
+
+  #leftSide {
+  	width: 100%;
+  	margin-bottom: 20px;
+  }
+
+  #rightSide  {
+  	width: 100%;
+  	margin-bottom: 20px;
+  }
+
+  .news {
+  	width: 260px;
+  }
+
+  #newsMenuContainer {
+  	width: 260px;
+  	position: relative;
+  	left: 0px;
+  	top: 0px;
+  }
+}  

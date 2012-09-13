@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1">
+	<url><loc>http://beseenjelix/</loc></url>
+	<url><loc>http://beseenjelix/accueil</loc></url>
+	<url><loc>http://beseenjelix/a\-propos</loc></url>
+	<url><loc>http://beseenjelix/news</loc></url>
+	<url><loc>http://beseenjelix/news\-theme\-</loc></url>
+	<url><loc>http://beseenjelix/news/creer\-news</loc></url>
+	<url><loc>http://beseenjelix/news/creer\-news/acceuil</loc></url>
+	<url><loc>http://beseenjelix/news/editer\-news\-</loc></url>
+	<url><loc>http://beseenjelix/news/supprimer\-news\-</loc></url>
+	<url><loc>http://beseenjelix/news\-</loc></url>
+	<url><loc>http://beseenjelix/news\-</loc></url>
+	<url><loc>http://beseenjelix/commentaires/nouveau</loc></url>
+	<url><loc>http://beseenjelix/commentaires\-en\-attente</loc></url>
+	<url><loc>http://beseenjelix/commentaires/traitement</loc></url>
+	<url><loc>http://beseenjelix/contact</loc></url>
+	<url><loc>http://beseenjelix/moyens\-de\-contact</loc></url>
+	<url><loc>http://beseenjelix/telecharger\-cv</loc></url>
+	<url><loc>http://beseenjelix/pdf\-record</loc></url>
+	<url><loc>http://beseenjelix/authentification/dologin</loc></url>
+	<url><loc>http://beseenjelix/authentification/dologout</loc></url>
+	<url><loc>http://beseenjelix/authentification/login</loc></url>
+	<url><loc>http://beseenjelix/sitemap</loc></url>
+</urlset>

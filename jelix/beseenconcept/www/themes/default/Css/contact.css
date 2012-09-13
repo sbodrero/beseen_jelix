@@ -99,3 +99,29 @@ input[type='submit'] {
 .controlErrorMsg {
     display: none;
 }
+
+@media screen and (max-width: 320px) {
+
+    input, textarea {
+        width: 180px;
+    }
+    #form {
+        width: 20px;
+        background-image: none;
+        background-color: #4F2121;
+        padding-top: 10px;
+        margin: 5px;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.85);
+        -moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+        -o-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    input[type='submit'] {
+        left: 150px;
+    }
+}

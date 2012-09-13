@@ -1,2 +1,6 @@
 User-agent: *
 Disallow: /jelix/
+
+
+Sitemap: http://www.beseenconcept.fr/sitemap.xml
+Sitemap: http://www.beseenconcept.fr/urllist.txt 

@@ -1,5 +1,5 @@
 {meta_html description "beseenconcept.fr : Développeur web et applicatif sur Pau, Pyrénées-Atlantiques"}
-<h1 class="indent">About</h1>
+<h1 class="indent">Accueil</h1>
 <blockquote>
 	<p>{@string.accroche@}</p>	
 </blockquote>
@@ -20,7 +20,7 @@
 	<div class="args">
 		<img src="{$j_themepath}Images/guarantee.png" alt="medaille garantie">
 		<h3>Flexibles</h3>
-		<p>web évolutif pour s'adapter à vos éxigeances et à vos besoins.</p>
+		<p>Web évolutif pour s'adapter à vos exigences et à vos besoins.</p>
 	</div>
 	<div class="args">
 		<img src="{$j_themepath}Images/guarantee.png" alt="medaille garantie">
