@@ -101,6 +101,8 @@ iframe {
     padding: 30px 20px 20px 20px;
 }
 
+/* To refactor */
+
 .buttonLike {
     -moz-box-shadow: inset 0 0 5px #888;
     -webkit-box-shadow: inset 0 0 5px #888;

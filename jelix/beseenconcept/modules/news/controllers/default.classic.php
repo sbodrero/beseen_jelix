@@ -90,6 +90,8 @@ class defaultCtrl extends jController {
         $frontImage = 'news';
 
         $rep = $this->getResponse('html');
+
+        $rep->title = $rep->title .=  jLocale::get('string.newsTitle').'-'.$newsId.'-details';
         $rep->body->assign('frontImage', $frontImage);
         $rep->body->assign( 'MAIN', $tpl->fetch('newsDetails') );
         return $rep;
