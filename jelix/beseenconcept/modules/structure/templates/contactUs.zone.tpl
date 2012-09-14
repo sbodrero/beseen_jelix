@@ -12,31 +12,24 @@ jQuery(function (){
 {/literal}
 //]]</script>
 
-
-<div class="msgNoticeMiddle">
-{zone 'structure~msgNotices', array('messageTypeRegex'=>'/^msg(Notice|Warning|Error)/')}
-</div>
-
-<div id="contact">
-    <div id="mainFormtBlock" >
-        <div class="userForm">
-            {form $form, 'structure~default:save',
-            array(),'', array('errorDecorator'=>'AppErrorDecorator', 'helpDecorator'=>'jFormsJQHelpDecoratorQtip')}
-                    
-            <fieldset>
-                    <div class="contactContent">
-                {formcontrols array('name', 'email', 'message')}
-                        <div class="userFormItem {ifctrl 'message'}userFormMessage{/ifctrl}">
-                            {ctrl_label}{ctrl_control}
-                        </div>
-                {/formcontrols}
-                    </div>       
-                    <div class="actionsFormItem sendMsgContact validate">{formsubmit}</div>
-            </fieldset>            
-            {/form}
-        </div>
-        <div class="infoTile">
-            <div id="accntInfo"><span class="controlHelper controlRequired">*</span>&nbsp;: {@structure~string.forms.requiredFields@}</div>
-        </div>
+<div id="mainFormtBlock" >
+    <div class="userForm">
+        {form $form, 'structure~default:save',
+        array(),'', array('errorDecorator'=>'AppErrorDecorator', 'helpDecorator'=>'jFormsJQHelpDecoratorQtip')}
+                
+        <fieldset>
+                <div class="contactContent">
+            {formcontrols array('name', 'email', 'message')}
+                    <div class="userFormItem {ifctrl 'message'}userFormMessage{/ifctrl}">
+                        {ctrl_label}{ctrl_control}
+                    </div>
+            {/formcontrols}
+                </div>       
+                <div class="actionsFormItem sendMsgContact validate">{formsubmit}</div>
+        </fieldset>            
+        {/form}
+    </div>
+    <div class="infoTile">
+        <div id="accntInfo"><span class="controlHelper controlRequired">*</span>&nbsp;: {@structure~string.forms.requiredFields@}</div>
     </div>
 </div>

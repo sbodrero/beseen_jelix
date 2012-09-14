@@ -464,7 +464,7 @@ div.noticeBox span {
 	display: none;
 }
 
-#me {
+#aboutPage {
 	margin-bottom: 70px;
 }
 
@@ -650,6 +650,10 @@ a.closeCross span {
   	margin-bottom: 20px;
   }
 
+  #newsWrapper {
+  	margin-bottom: 20px;
+  }
+
   .news {
   	width: 260px;
   }
@@ -659,5 +663,30 @@ a.closeCross span {
   	position: relative;
   	left: 0px;
   	top: 0px;
+  }
+
+  #newsDetails {
+  	margin-top: 70px;
+  	margin-bottom: 20px;
+  }
+
+  #aboutPage {
+  	width: 100%;
+  }
+
+  #virtualCard h3, #virtualCard ul {
+  	display: none;
+  }
+
+  #virtualCard:after {
+  	content('*');
+  }
+
+  .floatLeft ul li {
+  	text-align: left;
+  }
+
+  .bootom h3 {
+  	font-size: 16px;
   }
 }  

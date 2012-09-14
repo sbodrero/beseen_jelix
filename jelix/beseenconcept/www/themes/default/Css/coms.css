@@ -17,7 +17,7 @@ input[type='submit'] {
 }
 
 #comsForm {
-	max-height: 290px;
+	min-height: 290px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -54,4 +54,13 @@ span.controlErrorMsg {
     display: none;
 }
 
-@ 
+@media screen and (max-width: 320px) {
+
+	.userFormItem {
+		display: block;
+	}
+	input[type='submit'] {
+		top: 0px;	
+		left: 0px;
+	}
+}
