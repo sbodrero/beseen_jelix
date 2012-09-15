@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urls xmlns="http://jelix.org/ns/urls/1.0">
+    <entrypoint type="classic" name="index" default="true" noentrypoint="true">
+        <!-- Main structure -->
+        <url pathinfo="/" module="structure" action="default:index" />
+        <url pathinfo="/accueil" module="structure" action="default:showWelcomePage" />
+        <url pathinfo="/a-propos" module="structure" action="default:showAboutPage" />
+        <!-- News module -->
+        <url pathinfo="/news" module="news" action="default:index" />
+        <url pathinfo="/news-theme-:theme" module="news" action="default:showNewsByTheme">
+            <param name="theme" type="string" />
+        </url>
+        <url pathinfo="/news/creer-news" module="news" action="default:prepareNewsForm" />
+        <url pathinfo="/news/creer-news/acceuil" module="news" action="default:showNewsForm" />
+        <url pathinfo="/news/editer-news-:id" module="news" action="default:editNews" >
+            <param name="id" type="int" />
+        </url>
+        <url pathinfo="/news/supprimer-news-:id" module="news" action="default:deleteNews" >
+            <param name="id" type="int" />
+        </url>
+        <!-- News details and coms -->
+        <url pathinfo="/news-:id" module="news" action="default:prepareComsForm">
+            <param name="id" type="int" />
+        </url>        
+        <url pathinfo="/news-:id/details" module="news" action="default:showNews">
+            <param name="id" type="int" />
+        </url>
+        <url pathinfo="/commentaires/nouveau" module="news" action="default:saveComs" /> 
+        <!-- Coms Admin-->
+        <url pathinfo="/commentaires-en-attente" module="news" action="default:waitingComs" />
+        <url pathinfo="/commentaires/traitement" module="news" action="default:deleteOrValidateWaitingComs" />
+        <!-- Contact form-->
+        <url pathinfo="/contact" module="structure" action="default:prepareContactPage" />
+        <url pathinfo="/moyens-de-contact" module="structure" action="default:showContactPage" />
+        <!-- Pdf downloads -->
+        <url pathinfo="/telecharger-cv" module="structure" action="default:cvDownload" />
+        <url pathinfo="/pdf-record" module="structure" action="default:udpatePdfCount" />
+        <!-- Authentification -->
+        <url pathinfo="/authentification" module="jauth" include="urls.xml"/>
+        <!-- Sitemap -->
+        <url pathinfo="/sitemap" module="sitemap" action="default:index"/>
+        <url pathinfo="/sitemap/ping-engines" module="sitemap" action="default:pingEngines"/>
+
+    </entrypoint>
+</urls>
