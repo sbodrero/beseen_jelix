@@ -178,7 +178,31 @@ class defaultCtrl extends jController {
     }
 
     function showNewsByTheme() {
+        $theme_id = $this->param('theme_id');
 
+        if (jAuth::isConnected()) {
+           $this->isConnected = true; 
+        }
+
+        $newsDao = jDao::get('newsdao');
+        $list = $newsDao->findNewsByTheme($theme_id);
+
+        $toolsSrv = jClasses::getService( 'tools' );
+        $newsList = $toolsSrv->prepareArrayForNewslist($list);        
+
+        $tpl = new jTpl();
+        $tpl->assign('newsList',$newsList);
+        $tpl->assign('isConnected', $this->isConnected);
+
+        $rep = $this->getResponse('html');
+        $rep->title .=  jLocale::get('string.newsTitle');
+
+        $frontImage = 'news';
+        
+        $rep->body->assign('frontImage', $frontImage);
+        $rep->body->assign('MAIN', $tpl->fetch('newsPage'));
+
+        return $rep;        
     }
 
     function prepareNewsForm() {

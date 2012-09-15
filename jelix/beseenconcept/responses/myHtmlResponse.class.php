@@ -55,6 +55,7 @@ class myHtmlResponse extends jResponseHtml {
     }    
 
     protected function doAfterActions() {
+        global $gJConfig;
         // Include all process in common for all actions, like the settings of the
         // main template, the settings of the response etc..
         $this->title .=  (( $this->title != '' ) ? ' - ' : ''). jLocale::get('structure~string.app.title');

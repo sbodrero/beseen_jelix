@@ -28,5 +28,11 @@
                 <eq property="id" expr="$newsId" />
             </conditions>
         </method>
+        <method name="findNewsByTheme" type="select">
+            <parameter name="theme_id" />
+            <conditions>
+                <eq property="theme_id" expr="$theme_id" />
+            </conditions>            
+        </method>
     </factory>
 </dao>

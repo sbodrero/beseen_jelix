@@ -12,6 +12,10 @@ class defaultCtrl extends jController {
     /**
     *
     */
+
+    public $pluginParams = array(
+        '*'=>array('auth.required'=>true));
+
     function index() {
 
         $rep = $this->getResponse('sitemap');

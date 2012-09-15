@@ -7,8 +7,8 @@
         <url pathinfo="/a-propos" module="structure" action="default:showAboutPage" />
         <!-- News module -->
         <url pathinfo="/news" module="news" action="default:index" />
-        <url pathinfo="/news-theme-:theme" module="news" action="default:showNewsByTheme">
-            <param name="theme" type="string" />
+        <url pathinfo="/news-theme-:theme_id" module="news" action="default:showNewsByTheme">
+            <param name="theme_id" type="int" />
         </url>
         <url pathinfo="/news/creer-news" module="news" action="default:prepareNewsForm" />
         <url pathinfo="/news/creer-news/acceuil" module="news" action="default:showNewsForm" />
