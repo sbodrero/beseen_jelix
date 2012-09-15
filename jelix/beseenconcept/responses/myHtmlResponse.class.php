@@ -57,8 +57,10 @@ class myHtmlResponse extends jResponseHtml {
     protected function doAfterActions() {
         // Include all process in common for all actions, like the settings of the
         // main template, the settings of the response etc..
+        $this->title .=  (( $this->title != '' ) ? ' - ' : ''). jLocale::get('structure~string.app.title');
 
-        $this->title .=  (( $this->title != '' ) ? ' - ' : ''). jLocale::get('structure~string.app.title');        
+        $this->body->assign( 'useGoogleAnalytics', $gJConfig->AppSection['useGoogleAnalytics']);
+        $this->body->assign( 'googleAnalyticsId', $gJConfig->AppSection['googleAnalyticsId']);
         $this->body->assignIfNone('MAIN','<p>no content</p>');
     }
 }
