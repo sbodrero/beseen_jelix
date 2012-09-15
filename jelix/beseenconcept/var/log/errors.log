@@ -15763,3 +15763,427 @@ array (   'module' => 'news',   'action' => 'default:index', )
 	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
 
 
+2012-09-15 17:12:30	127.0.0.1	notice	2012-09-15 17:12:30	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:12:30	127.0.0.1	notice	2012-09-15 17:12:30	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:12:30	127.0.0.1	notice	2012-09-15 17:12:30	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:12:30	127.0.0.1	notice	2012-09-15 17:12:30	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:12:47	127.0.0.1	notice	2012-09-15 17:12:47	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:12:47	127.0.0.1	notice	2012-09-15 17:12:47	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:12:47	127.0.0.1	notice	2012-09-15 17:12:47	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:12:47	127.0.0.1	notice	2012-09-15 17:12:47	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:08	127.0.0.1	notice	2012-09-15 17:13:08	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:08	127.0.0.1	notice	2012-09-15 17:13:08	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:08	127.0.0.1	notice	2012-09-15 17:13:08	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:08	127.0.0.1	notice	2012-09-15 17:13:08	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:39	127.0.0.1	notice	2012-09-15 17:13:39	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:39	127.0.0.1	notice	2012-09-15 17:13:39	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:39	127.0.0.1	notice	2012-09-15 17:13:39	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:39	127.0.0.1	notice	2012-09-15 17:13:39	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:55	127.0.0.1	notice	2012-09-15 17:13:55	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:55	127.0.0.1	notice	2012-09-15 17:13:55	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:55	127.0.0.1	notice	2012-09-15 17:13:55	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:13:55	127.0.0.1	notice	2012-09-15 17:13:55	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:46	127.0.0.1	notice	2012-09-15 17:16:46	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:46	127.0.0.1	notice	2012-09-15 17:16:46	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:46	127.0.0.1	notice	2012-09-15 17:16:46	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:46	127.0.0.1	notice	2012-09-15 17:16:46	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/accueil
+array (   'module' => 'structure',   'action' => 'default:showWelcomePage', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:51	127.0.0.1	notice	2012-09-15 17:16:51	127.0.0.1	[8]	Undefined property: cDaoRecord_news_Jx_themes_Jx_mysql::$id	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\themesList_html_t.php	13
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	template_11d8d75eba72c9132a2b0dd6043dd8a8()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	1	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 225
+	2	jZone->_createContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 195
+	3	jZone->getContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 265
+	4	jZone::_callZone()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 95
+	5	jZone::get()	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\newsPage_html_t.php : 42
+	6	template_aebcd9042d81ec89d1f5e02b7572d10c()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	7	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\modules\news\controllers\default.classic.php : 47
+	8	defaultCtrl->index()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 195
+	9	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:51	127.0.0.1	notice	2012-09-15 17:16:51	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:51	127.0.0.1	notice	2012-09-15 17:16:51	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:51	127.0.0.1	notice	2012-09-15 17:16:51	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:16:51	127.0.0.1	notice	2012-09-15 17:16:51	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:17:34	127.0.0.1	notice	2012-09-15 17:17:34	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:17:34	127.0.0.1	notice	2012-09-15 17:17:34	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:17:34	127.0.0.1	notice	2012-09-15 17:17:34	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:17:34	127.0.0.1	notice	2012-09-15 17:17:34	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:21:57	127.0.0.1	notice	2012-09-15 17:21:57	127.0.0.1	[8]	Undefined property: cDaoRecord_news_Jx_themes_Jx_mysql::$id	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\themesList_html_t.php	13
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	template_11d8d75eba72c9132a2b0dd6043dd8a8()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	1	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 225
+	2	jZone->_createContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 195
+	3	jZone->getContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 265
+	4	jZone::_callZone()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 95
+	5	jZone::get()	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\newsPage_html_t.php : 42
+	6	template_aebcd9042d81ec89d1f5e02b7572d10c()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	7	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\modules\news\controllers\default.classic.php : 47
+	8	defaultCtrl->index()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 195
+	9	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:21:57	127.0.0.1	notice	2012-09-15 17:21:57	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:21:57	127.0.0.1	notice	2012-09-15 17:21:57	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:21:57	127.0.0.1	notice	2012-09-15 17:21:57	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:21:57	127.0.0.1	notice	2012-09-15 17:21:57	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:22:10	127.0.0.1	notice	2012-09-15 17:22:10	127.0.0.1	[8]	Undefined property: cDaoRecord_news_Jx_themes_Jx_mysql::$id	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\themesList_html_t.php	13
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	template_11d8d75eba72c9132a2b0dd6043dd8a8()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	1	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 225
+	2	jZone->_createContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 195
+	3	jZone->getContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 265
+	4	jZone::_callZone()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 95
+	5	jZone::get()	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\newsPage_html_t.php : 42
+	6	template_aebcd9042d81ec89d1f5e02b7572d10c()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	7	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\modules\news\controllers\default.classic.php : 47
+	8	defaultCtrl->index()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 195
+	9	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:22:10	127.0.0.1	notice	2012-09-15 17:22:10	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:22:10	127.0.0.1	notice	2012-09-15 17:22:10	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	62
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:22:10	127.0.0.1	notice	2012-09-15 17:22:10	127.0.0.1	[8]	Undefined variable: gJConfig	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:22:10	127.0.0.1	notice	2012-09-15 17:22:10	127.0.0.1	[8]	Trying to get property of non-object	C:\wamp\www\beseen_jelix\jelix\beseenconcept\responses\myHtmlResponse.class.php	63
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	myHtmlResponse->doAfterActions()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\response\jResponseHtml.class.php : 182
+	1	jResponseHtml->output()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 204
+	2	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
+2012-09-15 17:24:12	127.0.0.1	notice	2012-09-15 17:24:12	127.0.0.1	[8]	Undefined property: cDaoRecord_news_Jx_themes_Jx_mysql::$id	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\themesList_html_t.php	13
+	/news
+array (   'module' => 'news',   'action' => 'default:index', )
+
+	0	template_11d8d75eba72c9132a2b0dd6043dd8a8()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	1	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 225
+	2	jZone->_createContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 195
+	3	jZone->getContent()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 265
+	4	jZone::_callZone()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\utils\jZone.class.php : 95
+	5	jZone::get()	C:\wamp\www\beseen_jelix\jelix\temp\beseenconcept\www\compiled\templates\modules\news\newsPage_html_t.php : 42
+	6	template_aebcd9042d81ec89d1f5e02b7572d10c()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\tpl\jTpl.class.php : 282
+	7	jTpl->fetch()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\modules\news\controllers\default.classic.php : 47
+	8	defaultCtrl->index()	C:\wamp\www\beseen_jelix\jelix\lib\jelix\core\jCoordinator.class.php : 195
+	9	jCoordinator->process()	C:\wamp\www\beseen_jelix\jelix\beseenconcept\www\index.php : 19
+
+
