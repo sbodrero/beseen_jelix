@@ -17,7 +17,7 @@
         <log>./var/log/</log>
         <var>./var/</var>
         <www>./www/</www>
-        <temp>../temp/JeunesProfs/</temp>
+        <temp>../temp/beseenconcept/</temp>
     </directories>    
     <entrypoints>
         <!-- file: the path to the entry point relative to the base path
