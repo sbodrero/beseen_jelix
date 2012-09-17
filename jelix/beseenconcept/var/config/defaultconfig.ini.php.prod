@@ -46,6 +46,7 @@ auth.access=2
 sitemap.access=2
 [coordplugins]
 ;name = file_ini_name or 1
+magicquotes = 1
 
 [tplplugins]
 ;defaultJformsBuilder=html
