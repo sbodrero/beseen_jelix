@@ -18,7 +18,5 @@ jApp::loadConfig('index/config.ini.php');
 jApp::setCoord(new jCoordinator());
 jApp::coord()->process(new jClassicRequest());
 
-?>
-
 
 
