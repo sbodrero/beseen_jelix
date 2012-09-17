@@ -10,6 +10,7 @@
 
 require ('../application.init.php');
 require (JELIX_LIB_CORE_PATH.'request/jClassicRequest.class.php');
+include('error_log.php');
 
 checkAppOpened();
 
