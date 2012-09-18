@@ -33,6 +33,7 @@ class defaultCtrl extends jController {
         $tpl = new jTpl();
 
         $frontImage = 'mainBan';
+        jLog::dump($frontImage);
 
         $rep->body->assign('frontImage', $frontImage);
         $rep->body->assign( 'MAIN', $tpl->fetch('structure~welcomePage') );
