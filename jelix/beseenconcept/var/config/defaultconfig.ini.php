@@ -3,7 +3,7 @@
 ;this file doesn't list all possible properties. See lib/jelix/core/defaultconfig.ini.php for that
 
 startModule=structure
-startAction="default:index"
+startAction="default:showAboutPage"
 
 locale=fr_FR
 charset=UTF-8
