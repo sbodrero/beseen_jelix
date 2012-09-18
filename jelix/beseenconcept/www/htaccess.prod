@@ -3,7 +3,6 @@ allow from all
 AddType x-mapp-php5 .php
 AddHandler x-mapp-php5 .php
 
-Options +FollowSymLinks -MultiViews
 RewriteEngine On
 
 RewriteBase /
