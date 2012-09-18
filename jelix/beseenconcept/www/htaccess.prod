@@ -3,14 +3,10 @@ allow from all
 AddType x-mapp-php5 .php
 AddHandler x-mapp-php5 .php
 
-Options +FollowSymLinks
+Options +FollowSymLinks -MultiViews
 RewriteEngine On
 
 RewriteBase /
-
-# FORCE WWW
-RewriteCond %{HTTP_HOST} ^beseenconcept.fr$
-RewriteRule ^(.*) http://www.beseenconcept.fr/ [QSA,L,R=301]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
