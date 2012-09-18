@@ -5,7 +5,6 @@ startModule=structure
 startAction="default:index"
 
 [responses]
-html=myHtmlResponse
 [modules]
 beseenconcept.access=2
 
