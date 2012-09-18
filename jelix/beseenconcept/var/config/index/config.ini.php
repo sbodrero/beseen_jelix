@@ -2,7 +2,7 @@
 ;for security reasons , don't remove or modify the first line
 
 startModule=structure
-startAction="default:showAboutPage"
+startAction="default:index"
 
 [responses]
 [modules]
