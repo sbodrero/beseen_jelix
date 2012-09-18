@@ -3,6 +3,8 @@ allow from all
 AddType x-mapp-php5 .php
 AddHandler x-mapp-php5 .php
 
+Options -Indexes
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
