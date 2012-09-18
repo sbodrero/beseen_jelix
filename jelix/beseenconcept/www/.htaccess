@@ -1,5 +1,11 @@
 allow from all
 
+AddType x-mapp-php5 .php
+AddHandler x-mapp-php5 .php
+
+# URL rewriting module activation
+RewriteEngine on
+RewriteBase /
 Options -Indexes
 
 # Force the latest IE version, in various cases when it may fall back to IE7 mode

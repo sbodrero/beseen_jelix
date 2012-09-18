@@ -10,7 +10,7 @@
 
 require ('../application.init.php');
 require (JELIX_LIB_CORE_PATH.'request/jClassicRequest.class.php');
-incude('error_log.php');
+include('error_log.php');
 
 checkAppOpened();
 
@@ -18,6 +18,3 @@ jApp::loadConfig('index/config.ini.php');
 
 jApp::setCoord(new jCoordinator());
 jApp::coord()->process(new jClassicRequest());
-
-
-?>
