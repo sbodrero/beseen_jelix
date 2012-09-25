@@ -118,6 +118,27 @@ class jForms {
             $form->initFromRequest();
         return $form;
     }
+    /**
+     * get an existing instance of a form, and clear all its data
+     *
+     * @param string $formSel the selector of the xml jform file
+     * @param string $formId  the id of the form (if you use multiple instance of a form)
+     */
+    static public function clear($formSel,$formId=null){
+        global $gJCoord;
+        if($formId === null)  $formId = self::DEFAULT_ID;
+        if(is_array($formId)) $formId = serialize($formId);
+        
+        // normalize the selector to avoid conflict in session
+        $sel = new jSelectorForm($formSel);
+        $formSel = $sel->toString();
+
+        if(isset($_SESSION['JFORMS'][$formSel][$formId])){
+            $_SESSION['JFORMS'][$formSel][$formId]->clear();
+        }
+
+        return self::get($formSel,$formId);
+    }
 
     /**
      * destroy a form in the session
