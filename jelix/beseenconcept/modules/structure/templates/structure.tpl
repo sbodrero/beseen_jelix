@@ -2,14 +2,14 @@
 {meta_html author "Sébastien Bodrero"}
 <div id="wrapper">
 	<div id="header">
-		<div id="mainTitle" class="textShadow"><a href="{jUrl 'structure~index'}">be seen concept</a></div>
+		<div id="mainTitle" class="textShadow"><a href="{jurl 'structure~index'}">be seen concept</a></div>
 		<img src="{$j_themepath}Images/sticker.png" alt="Ruban rouge">
 		<div id="nav">
 			<ul>
-				<li><a href="{jUrl 'structure~index'}">accueil</a></li>
-				<li><a href="{jUrl 'news~index'}">news</a></li>
-				<li><a href="{jUrl 'structure~prepareContactPage'}">contact</a></li>
-				<li><a href="{jUrl 'structure~showAboutPage'}">à propos</a></li>
+				<li><a href="{jurl 'structure~index'}">accueil</a></li>
+				<li><a href="{jurl 'news~index'}">news</a></li>
+				<li><a href="{jurl 'structure~prepareContactPage'}">contact</a></li>
+				<li><a href="{jurl 'structure~showAboutPage'}">à propos</a></li>
 			</ul>
 		</div>
 	</div>

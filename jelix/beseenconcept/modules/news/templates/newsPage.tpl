@@ -11,7 +11,7 @@
 			<h2>{$news->title}</h2>
 			Par Sébastien&nbsp;le&nbsp;{$news->date}&nbsp;dans&nbsp;<a href="">{$news->theme_name}</a>
 			{if isset($news->comsCount) && $news->comsCount > 0}
-			<a href="{jUrl 'news~prepareComsForm',array('id'=>$news->id)}" title="Voir les commentaires">
+			<a href="{jurl 'news~prepareComsForm',array('id'=>$news->id)}" title="Voir les commentaires">
 				<img class="smallImage" src="{$j_themepath}Images/bulle.png" alt="Bulle commentaires">{$news->comsCount}&nbsp;commentaires
 			</a>
 			{/if}
@@ -22,11 +22,11 @@
 			{$news->text}{if isset($news->textShort)}...{/if}
 			<div class="toolsBar">
 				{if ($isConnected)}
-				<a href="{jUrl 'news~editNews',array('id'=>$news->id)}" title="Editer la news">Editer</a>
-				<a href="{jUrl 'news~deleteNews',array('id'=>$news->id)}" title="Supprimer la news">Supprimer</a>
+				<a href="{jurl 'news~editNews',array('id'=>$news->id)}" title="Editer la news">Editer</a>
+				<a href="{jurl 'news~deleteNews',array('id'=>$news->id)}" title="Supprimer la news">Supprimer</a>
 				{/if}
 				{if (isset($news->textShort))}	
-				<a href="{jUrl 'news~prepareComsForm',array('id' => $news->id)}"><img src="{$j_themepath}Images/bottomNewsRibbon.png" alt="Voir le détail de la news"></a>
+				<a href="{jurl 'news~prepareComsForm',array('id' => $news->id)}"><img src="{$j_themepath}Images/bottomNewsRibbon.png" alt="Voir le détail de la news"></a>
 				{/if}
 			</div>
 		</div>

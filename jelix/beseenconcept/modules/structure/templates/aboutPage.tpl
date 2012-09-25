@@ -38,7 +38,7 @@
 		<div class="floatLeft">
 		<h3>Développeur web</h3>
 		<ul>
-			<li><a href="{jUrl 'structure~cvDownload'}" title="Télécharger mon cv"><img class="alignMiddleAndMargin" src="{$j_themepath}Images/pdf.png" alt="Logo pdf">CV</a></li>
+			<li><a href="{jurl 'structure~cvDownload'}" title="Télécharger mon cv"><img class="alignMiddleAndMargin" src="{$j_themepath}Images/pdf.png" alt="Logo pdf">CV</a></li>
 		</ul>		
 		</div>
 		<div class="floatLeft">
@@ -62,7 +62,7 @@
 		<div class="floatLeft">
 		<h3>Formateur</h3>
 		<ul>
-			<li><a href="https://www.mcpvirtualbusinesscard.com/VBCServer/beseenconcept.fr/GetTranscript.aspx?id=c43d8cd5-101a-4181-a8f4-77c107eced4f" title="Lien transcript" data-attr="{jUrl 'structure~udpatePdfCount', array('name' => 'Transcript')}"><img class="alignMiddleAndMargin" src="{$j_themepath}Images/pdf.png" alt="Logo pdf">MCP Transcript</a></li>
+			<li><a href="https://www.mcpvirtualbusinesscard.com/VBCServer/beseenconcept.fr/GetTranscript.aspx?id=c43d8cd5-101a-4181-a8f4-77c107eced4f" title="Lien transcript" data-attr="{jurl 'structure~udpatePdfCount', array('name' => 'Transcript')}"><img class="alignMiddleAndMargin" src="{$j_themepath}Images/pdf.png" alt="Logo pdf">MCP Transcript</a></li>
 		</ul>		
 		</div>
 		<div id="virtualCard">
