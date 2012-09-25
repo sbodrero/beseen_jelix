@@ -27,6 +27,9 @@ class myHtmlResponse extends jResponseHtml {
 
         global $gJConfig;
 
+        // Force ie9 latest mode and then prevent ie9 compatibility mode
+        $this->addHeadContent('<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>');
+
         //$this->addHeadContent( '<link rel="icon" href="'. $gJConfig->urlengine['basePath'] .'favicon.ico" type="image/x-icon">' ) ;
 
         $script = $gJConfig->urlengine['jqueryPath'];
