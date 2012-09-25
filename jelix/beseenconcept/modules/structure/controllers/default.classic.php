@@ -17,7 +17,7 @@ class defaultCtrl extends jController {
 
         jForms::clean('contact');
         $form = jForms::create('contact');
-        $form = jForms::clear('contact');
+        //$form = jForms::clear('contact');
 
         jMessage::clear('msgNoticeContact');
 
@@ -45,7 +45,7 @@ class defaultCtrl extends jController {
 
         jForms::clean('contact');
         $form = jForms::create('contact');
-        $form = jForms::clear('contact');
+        //$form = jForms::clear('contact');
 
         jMessage::clear('msgNoticeContact');
 

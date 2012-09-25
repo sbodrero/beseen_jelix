@@ -53,7 +53,7 @@ class defaultCtrl extends jController {
         $newsId = $this->param('id');
         jForms::clean('comsform');
         $form = jForms::create('comsform');
-        $form = jForms::clear('comsform');
+        //$form = jForms::clear('comsform');
 
         $form->setData('news_id', $newsId);
 
@@ -209,7 +209,7 @@ class defaultCtrl extends jController {
 
         jForms::clean('newsform');
         $form = jForms::create('newsform');
-        $form = jForms::clear('newsform');
+        //$form = jForms::clear('newsform');
 
         jMessage::clear('msgNoticeContact');
 
