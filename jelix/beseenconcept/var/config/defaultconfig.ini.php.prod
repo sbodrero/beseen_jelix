@@ -233,9 +233,9 @@ name=
 [AppSection]
 useGoogleAnalytics=off
 googleAnalyticsId=UA-34845463-1
-FB_pageUrl="http://www.facebook.com/jordane.bodrero"
-FB_channelUrl=
-FB_adminProperty=
+;FB_pageUrl="http://www.facebook.com/jordane.bodrero"
+;FB_channelUrl=
+;FB_adminProperty=
 ; ini_trees_path : if path is relative, it is relative to jelix's var
 ini_trees_path="../../inidocs/"
 webmediaPath="var/www/WebMedia/beseenconcept/"
