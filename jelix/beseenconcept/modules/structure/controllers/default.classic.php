@@ -19,7 +19,7 @@ class defaultCtrl extends jController {
         $form = jForms::create('contact');
         //$form = jForms::clear('contact');
 
-        jMessage::clear('msgNoticeContact');
+        //jMessage::clear('msgNoticeContact');
 
         $rep= $this->getResponse('redirect');
         $rep->action='default:showWelcomePage';
